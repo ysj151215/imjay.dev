@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@variants media-hover {
+  .prose a:hover {
+    color: #000000;
+  }
+
+  html.dark .prose a:hover {
+    color: #ffffff;
+  }
+}
