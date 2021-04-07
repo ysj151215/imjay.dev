@@ -1,0 +1,15 @@
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  min-width: 320px;
+  color: #555555;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+html.dark {
+  color: #bbbbbb;
+  background-color: #050505;
+}
