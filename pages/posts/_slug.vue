@@ -51,6 +51,8 @@ export default {
 <style scoped>
 aside ul a.nuxt-link-exact-active {
   color: #000;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 html.dark aside ul a.nuxt-link-exact-active {
