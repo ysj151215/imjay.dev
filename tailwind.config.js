@@ -52,6 +52,9 @@ module.exports = {
       xs: { max: '425px' }
     },
     extend: {
+      fontFamily: {
+        sans: '"Inter", Inter var,system-ui,-apple-system,BlinkMacSystemFont,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'
+      },
       typography: () => ({
         DEFAULT: {
           css: {
