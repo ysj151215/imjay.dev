@@ -13,7 +13,3 @@ html.dark {
   color: #bbbbbb;
   background-color: #050505;
 }
-
-body {
-  font-family: theme('fontFamily.sans');
-}
