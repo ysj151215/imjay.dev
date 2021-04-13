@@ -43,6 +43,9 @@ module.exports = {
         sm: '45px'
       }
     },
+    fontFamily: {
+      fira: 'Fira Code, monospace'
+    },
     screens: {
       '2xl': { max: '1536px' },
       xl: { max: '1280px' },
