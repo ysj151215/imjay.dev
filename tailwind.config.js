@@ -71,7 +71,8 @@ module.exports = {
             hr: { width: '50px', 'margin-left': 'auto', 'margin-right': 'auto' },
             blockquote: { color: 'inherit' },
             'blockquote p:first-of-type::before': { content: 'none' },
-            'blockquote p:first-of-type::after': { content: 'none' }
+            'blockquote p:first-of-type::after': { content: 'none' },
+            'figure figcaption': { color: 'var(--fg)' }
           }
         }
       })
