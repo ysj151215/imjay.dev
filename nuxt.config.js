@@ -49,9 +49,7 @@ export default {
     markdown: {
       prism: {
         theme: 'prism-themes/themes/prism-material-oceanic.css'
-      },
-      // https://github.com/imcuttle/remark-heading-id
-      remarkPlugins: ['remark-heading-id']
+      }
     }
   },
 

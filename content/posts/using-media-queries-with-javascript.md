@@ -9,7 +9,7 @@ Media queries 不只是一个 CSS 特性，也可以与 JavaScript 进行交互�
 
 > 如果您正在寻找现成的解决方案，不妨看下本文原作者开发的 lib：[mediaq](https://dev.maroun-baydoun.com/mediaq/).
 
-## window.matchMedia API {#the-api}
+## window.matchMedia API
 
 `window.matchMedia` 是浏览器暴露出来的一个方法，它以「media query」作为参数，返回一个 `MediaQueryList` 对象。
 
@@ -17,7 +17,7 @@ Media queries 不只是一个 CSS 特性，也可以与 JavaScript 进行交互�
 const mediaQueryList = window.matchMedia('only screen and (max-width: 600px')
 ```
 
-## 检测 media query 是否匹配 {#check-if-matches}
+## 检测 media query 是否匹配
 
 `MediaQueryList` 对象中有一个 boolean 参数 `matches`，任何时候都可以通过这个参数来检测指定的 media query 是否匹配。
 
@@ -29,7 +29,7 @@ if (mediaQueryList.matches) {
 }
 ```
 
-## 监听变化 {#listening-for-updates}
+## 监听变化
 
 除了判断 `MediaQueryList` 对象的 `matches` 值，您也可以直接绑定一个 listener 事件来监听 media query 的变化及终止（例如：浏览器窗口缩放、设备横竖屏切换等等）。
 
@@ -74,7 +74,7 @@ if (mediaQueryList.removeEventListener) {
 
 阅读更多 [浏览器兼容性](https://developer.mozilla.org/zh-CN/docs/Web/API/MediaQueryList) 相关内容。
 
-## 为什么要这么做 {#why-use}
+## 为什么要这么做
 
 在 CSS 代码里，media queries 可被用于创建响应式布局，也可以用来隐藏某些元素，或加载更高/低分辨率的背景图片，而在某些情况下，这显然还不足够，所以需要借助 JavaScript 来进一步优化网页。
 
@@ -114,6 +114,6 @@ JavaScript 也可以在不需要 media query 的帮助下检测 [屏幕分辨率
 
 ---
 
-### 笔者提示 {#author-tips}
+### 笔者提示
 
 > [react-use](https://github.com/streamich/react-use) 中的 \`[useMedia()](https://github.com/streamich/react-use/blob/master/src/useMedia.ts)\` 方法和 [vueuse](https://github.com/vueuse/vueuse) 中的 \`[useMediaQuery()](https://github.com/vueuse/vueuse/blob/main/packages/core/useMediaQuery/index.ts)\` 方法，它们的源代码均可作为实际产品参考。

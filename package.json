@@ -29,8 +29,7 @@
     "core-js": "^3.9.1",
     "medium-zoom": "^1.0.6",
     "nuxt": "^2.15.3",
-    "prism-themes": "^1.6.0",
-    "remark-heading-id": "^1.0.0"
+    "prism-themes": "^1.6.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",
