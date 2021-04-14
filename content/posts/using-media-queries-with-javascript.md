@@ -1,6 +1,7 @@
 ---
 title: 在 JavaScript 中使用 media queries
 description: Media queries 不只是一个 CSS 特性，也可以与 JavaScript 进行交互，本文将向您介绍具体的实现方法。
+updatedAt: 2021-04-07
 ---
 
 **本文翻译自：《[Using media queries with JavaScript](https://dev.to/maroun_baydoun/using-media-queries-with-javascript-4aeo)**》。
