@@ -36,7 +36,9 @@ end tell
 
 ## 快速执行脚本
 
-至此您已经完成了脚本的编写，只需「运行」即可，但很明显这样是不够的，您需要将它封装为一个 Application 才能更快速地执行。方法很简单：点击菜单栏里的「File」、点击「Export」、选择「File Format 」为「Application」、保存。然后您就可以在 Spotlight 或其它各种 Autoflow 类应用程序里快速切换主题模式了。
+至此您已经完成了脚本的编写，只需「运行」即可，但很明显这样是不够的，您需要将它封装为一个 Application 才能更快速地执行。
+
+方法很简单：点击菜单栏里的「File」、点击「Export」、选择「File Format 」为「Application」、保存。然后您就可以在 Spotlight 或其它各种 Autoflow 类应用程序里快速切换主题模式了。
 
 ## 自动执行脚本
 
@@ -44,7 +46,9 @@ end tell
 
 <markdown-image alt="在「日历」中设置自动化脚本" figcaption="在「日历」中设置自动化脚本" src="/change-wallpapers-with-color-mode-on-macos11/set-calendar-action.png"></markdown-image>
 
-例如，我们需要实现这样一个场景：**每天早上 07:00 和下午 17:30 各切换一次主题**。除了要设置「starts」、「ends」、「repeat」等参数外，还需要选择自定义「alert」方式为「Open file」方法，并选择我们刚才保存的 AppleScript 文件，这样才算实现了真正的自动化操作。
+例如，我们需要实现这样一个场景：**每天早上 07:00 和下午 17:30 各切换一次主题**。
+
+除了要设置「starts」、「ends」、「repeat」等参数外，还需要选择自定义「alert」方式为「Open file」方法，并选择我们刚才保存的 AppleScript 文件，这样才算实现了真正的自动化操作。
 
 ---
 
