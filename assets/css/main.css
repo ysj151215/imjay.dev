@@ -1,8 +1,8 @@
-:root {
-  color-scheme: light dark;
-}
-
 html {
+  --c-bg: #fff;
+  --c-scrollbar: #eee;
+  --c-scrollbar-hover: #bbb;
+
   --fg: #555;
   --fg-deep: #222;
   --fg-deeper: #000;
@@ -14,6 +14,10 @@ html {
 }
 
 html.dark {
+  --c-bg: #050505;
+  --c-scrollbar: #111;
+  --c-scrollbar-hover: #222;
+
   --fg: #bbb;
   --fg-deep: #ddd;
   --fg-deeper: #fff;
@@ -24,12 +28,6 @@ html.dark {
 
 /* Custom code block font */
 /* Fira Code: https://github.com/tonsky/FiraCode */
-
-code[class*='language-'],
-pre[class*='language-'] {
-  font-family: theme('fontFamily.fira') !important;
-}
-
 /* 
 @font-face {
   font-family: 'Fira Code';
@@ -73,3 +71,29 @@ pre[class*='language-'] {
   font-weight: 300 700;
   font-style: normal;
 } */
+
+* {
+  scrollbar-color: var(--c-scrollbar) var(--c-bg);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--c-bg);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-scrollbar);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-scrollbar-hover);
+}
