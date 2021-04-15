@@ -10,7 +10,6 @@ html {
   min-width: 320px;
   color: #555;
   background-color: #fff;
-  scroll-behavior: smooth;
 }
 
 html.dark {
