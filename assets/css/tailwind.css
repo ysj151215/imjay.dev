@@ -4,6 +4,7 @@
 
 .prose a {
   text-underline-offset: 4px;
+  @apply ring-offset-2 focus:no-underline focus:ring-4 focus:outline-none focus:ring-[#fe6958] focus:border-[#fe6958];
 }
 
 @variants media-hover {
