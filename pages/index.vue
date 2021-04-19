@@ -1,6 +1,6 @@
 <template>
   <div class="container flex flex-col flex-auto w-full m-auto md:block">
-    <article class="w-full py-10 mx-auto prose dark:prose-dark">
+    <article class="w-full py-10 mx-auto prose outline-none dark:prose-dark">
       <h1>{{ page.title }}</h1>
       <NuxtContent :document="page" />
       <Footer />
