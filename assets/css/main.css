@@ -75,7 +75,7 @@ html.dark {
   scrollbar-color: var(--c-scrollbar) var(--c-bg);
 }
 
-::-webkit-scrollbar {
+pre::-webkit-scrollbar {
   width: 6px;
 }
 

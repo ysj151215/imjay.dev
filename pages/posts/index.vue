@@ -1,13 +1,13 @@
 <template>
   <div class="container flex flex-col flex-auto w-full m-auto md:block">
-    <div class="w-full py-10 mx-auto prose dark:prose-dark max-w-[65ch]">
+    <article class="w-full py-10 mx-auto prose outline-none dark:prose-dark">
       <h1>文章</h1>
       <ul>
         <li v-for="article in articles" :key="article.slug">
           <NuxtLink :to="article.path">{{ article.title }}</NuxtLink>
         </li>
       </ul>
-    </div>
+    </article>
   </div>
 </template>
 
