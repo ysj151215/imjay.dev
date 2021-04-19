@@ -17,7 +17,7 @@ export default {
   },
   head() {
     return {
-      title: this.page.title,
+      title: this.page.title + ' - Jay',
       meta: [
         {
           hid: 'description',
