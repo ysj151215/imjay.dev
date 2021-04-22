@@ -85,9 +85,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-a {
-  @apply ring-offset-2 focus:no-underline focus:ring-4 focus:outline-none focus:ring-[#fe6958] focus:border-[#fe6958];
-}
-</style>
