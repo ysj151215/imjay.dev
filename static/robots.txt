@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://imjay.dev/sitemap.xml
