@@ -4,7 +4,11 @@ export default {
   head: {
     title: 'Jay',
     htmlAttrs: { lang: 'zh-Hans' },
-    meta: [{ charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'google-site-verification', content: 'l-MINtHFufZtnwHHgdwW5hrwxamNM2CIS5qzfowB9vc' }
+    ],
     link: [
       { rel: 'icon', href: '/favicon.ico' },
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
