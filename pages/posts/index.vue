@@ -24,7 +24,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: "Jay's Portfolio"
+          content: '我的文章内容包含但不限于 Modern CSS、ECMAScript、npm、React、Serverless、Vue 等等。希望能帮助到您，也欢迎前辈们指点迷津。'
         }
       ]
     }
