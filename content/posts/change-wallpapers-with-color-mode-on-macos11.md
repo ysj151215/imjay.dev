@@ -1,6 +1,6 @@
 ---
 title: 用 AppleScript 同时切换壁纸与主题模式
-description: 这是一个免费、简单、不折腾的方案，顺便向您安利一套个人觉得不错的壁纸。
+description: 这是一个简单、不折腾的方案，顺便向您安利一个免费 App。
 updatedAt: 2021-04-14
 ---
 
