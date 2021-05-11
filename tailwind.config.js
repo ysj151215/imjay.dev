@@ -2,6 +2,7 @@ const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
+  mode: 'jit',
   darkMode: 'class',
   plugins: [
     require('@tailwindcss/typography'),
