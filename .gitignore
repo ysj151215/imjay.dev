@@ -9,3 +9,4 @@ yarn-error.log*
 .eslintcache
 .npm
 .nuxt
+.nvmrc
