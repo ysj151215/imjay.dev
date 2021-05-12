@@ -16,10 +16,10 @@
     "@splitbee/web": "^0.2.4",
     "@tailwindcss/typography": "^0.4.0",
     "@vue/composition-api": "1.0.0-rc.8",
-    "@vueuse/core": "^4.9.2",
+    "@vueuse/core": "^4.9.4",
     "core-js": "^3.12.1",
     "medium-zoom": "^1.0.6",
-    "nuxt": "^2.15.5",
+    "nuxt": "^2.15.6",
     "prism-theme-vars": "^0.2.2"
   },
   "devDependencies": {
