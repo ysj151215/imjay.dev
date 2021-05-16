@@ -1,3 +1,4 @@
 {
+	"css.lint.unknownAtRules": "ignore",
 	"vetur.validation.style": false
 }
