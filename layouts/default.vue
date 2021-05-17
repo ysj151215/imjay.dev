@@ -1,7 +1,7 @@
 <template>
-  <div class="relative flex flex-col min-h-screen" data-nosnippet>
+  <div class="relative flex flex-col min-h-screen">
     <Header />
-    <main class="flex flex-col flex-auto">
+    <main class="flex flex-col flex-auto" data-nosnippet>
       <Nuxt />
     </main>
   </div>
