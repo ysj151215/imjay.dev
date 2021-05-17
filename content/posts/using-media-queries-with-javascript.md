@@ -82,10 +82,10 @@ if (mediaQueryList.removeEventListener) {
 想象一下，网页中有一个需要复杂运算的组件，您不需要它在小屏幕设备上显示，通过 CSS 您可以很轻松地做到，但它仍是 DOM 的一部分，就意味着它仍可能进一步降低 Web 应用的性能。
 
 ```css
-@media only screen and (max-width: 480px") {
- .component {
-   display: none; /* 这个组件已经不再显示了，但它仍是网页的一部分 */
- }
+@media only screen and (max-width: 480px) {
+  .component {
+    display: none; /* 这个组件已经不再显示了，但它仍是网页的一部分 */
+  }
 }
 ```
 
