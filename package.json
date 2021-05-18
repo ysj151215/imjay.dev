@@ -1,15 +1,15 @@
 {
   "name": "blog",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "dev": "nuxt --open",
-    "build": "nuxt build",
+    "build": "nuxt build --analyze",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
-    "@nuxtjs/axios": "^5.13.3",
     "@nuxtjs/color-mode": "^2.0.5",
     "@nuxtjs/dayjs": "^1.4.0",
     "@splitbee/web": "^0.2.4",
