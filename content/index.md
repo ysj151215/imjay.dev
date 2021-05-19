@@ -18,7 +18,7 @@ Hi 我是 Jay，我的主职是前端工程师，同时也是位独立开发者�
 
 遇到任何问题或想提出建议，请点击导航栏中的 “**Feedback**” 填写表单。我会根据大家的反馈进行适当的调整和修复。
 
-您也可以在 <a aria-label="我的 GitHub" data-splitbee-event="External Link" data-splitbee-event-type="GitHub" href="https://github.com/ysj151215" rel="nofollow noopener noreferrer" target="_blank" title="我的 GitHub">GitHub</a> 和 <a aria-label="我的 Twitter" data-splitbee-event="External Link" data-splitbee-event-type="Twitter" href="https://twitter.com/ysj151215" rel="nofollow noopener noreferrer" target="_blank" title="我的 Twitter">Twitter</a> 上找到我，或发送邮件至 [hi@imjay.dev](mailto:hi@imjay.dev) 联系我。
+您也可以在 [GitHub](https://github.com/ysj151215) 和 [Twitter](https://twitter.com/ysj151215) 上找到我，或发送邮件至 [hi@imjay.dev](mailto:hi@imjay.dev) 联系我。
 
 ---
 

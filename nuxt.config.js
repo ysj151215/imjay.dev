@@ -21,7 +21,7 @@ export default {
 
   css: ['@/assets/css/main.css'],
 
-  plugins: ['~/plugins/shortcuts.js', { src: '~/plugins/splitbee.js', ssr: false }],
+  plugins: ['~/plugins/shortcuts.js'],
 
   components: true,
 

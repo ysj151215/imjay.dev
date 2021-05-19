@@ -10,9 +10,6 @@
         <a
           aria-label="我的 GitHub"
           class="cursor-pointer h-[20px] ml-5 w-[20px] media-hover:hover:text-black dark:media-hover:hover:text-white"
-          data-splitbee-event="External Link"
-          data-splitbee-event-type="GitHub"
-          href="https://github.com/ysj151215"
           rel="noreferrer"
           target="_blank"
           title="我的 GitHub"
@@ -27,8 +24,6 @@
         <a
           aria-label="我的 Twitter"
           class="cursor-pointer h-[20px] ml-5 w-[20px] media-hover:hover:text-black dark:media-hover:hover:text-white"
-          data-splitbee-event="External Link"
-          data-splitbee-event-type="Twitter"
           href="https://twitter.com/ysj151215"
           rel="noreferrer"
           target="_blank"
