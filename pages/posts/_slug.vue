@@ -2,8 +2,8 @@
   <div class="container flex flex-col flex-auto w-full m-auto md:block">
     <article class="w-full py-10 mx-auto prose outline-none dark:prose-dark">
       <p class="text-sm">最后修改日期：{{ $dayjs(page.updatedAt).utc().format('YYYY-MM-DD') }}</p>
-      <h1>{{ page.title }}</h1>
-      <NuxtContent :document="page" />
+      <h1 data-nosnippet>{{ page.title }}</h1>
+      <NuxtContent data-nosnippet :document="page" />
       <Footer />
     </article>
   </div>

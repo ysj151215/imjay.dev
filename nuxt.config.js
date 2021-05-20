@@ -2,7 +2,7 @@ export default {
   target: 'static',
 
   head: {
-    title: 'Jay',
+    title: 'Jay Yan',
     htmlAttrs: { lang: 'zh-Hans' },
     meta: [
       { charset: 'utf-8' },
