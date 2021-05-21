@@ -1,8 +1,8 @@
 <template>
   <div class="container flex flex-col flex-auto w-full m-auto md:block">
-    <article class="w-full py-10 mx-auto prose outline-none dark:prose-dark">
-      <h1 data-nosnippet>文章</h1>
-      <ul data-nosnippet>
+    <article data-nosnippet class="w-full py-10 mx-auto prose outline-none dark:prose-dark">
+      <h1>文章</h1>
+      <ul>
         <li v-for="article in articles" :key="article.slug">
           <NuxtLink :to="article.path">{{ article.title }}</NuxtLink>
         </li>
@@ -19,7 +19,7 @@ export default {
   },
   head() {
     return {
-      title: '博客 - Jay',
+      title: '博客 - Jay Yan',
       meta: [
         {
           hid: 'description',
