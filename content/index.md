@@ -12,7 +12,7 @@ Hi 我是 Jay，我的主职是前端工程师，同时也是位独立开发者�
 - ⚡️ 速度快，几乎瞬间输出结果。
 - 🎨 样式简洁美观，参考 [Lucent UI](https://www.figma.com/community/file/810284256749592805) 开发。
 - ⚙️ 支持多图上传、一键复制。
-- 🙈 无后端服务，不必担心隐私泄漏。
+- 🔒 无后端服务，不必担心隐私泄漏。
 
 **欢迎使用！**
 
@@ -21,7 +21,5 @@ Hi 我是 Jay，我的主职是前端工程师，同时也是位独立开发者�
 您也可以在 [GitHub](https://github.com/ysj151215) 和 [Twitter](https://twitter.com/ysj151215) 上找到我，或发送邮件至 [hi@imjay.dev](mailto:hi@imjay.dev) 联系我。
 
 ---
-
-### 声明
 
 本博客基于 [Nuxt.js](https://nuxtjs.org/) 和 [Tailwind CSS](https://tailwindcss.com/) 开发，用户界面风格参考自 [Anthony Fu](https://antfu.me/) 的个人网站。感谢他们为开源社区作出的巨大贡献。
