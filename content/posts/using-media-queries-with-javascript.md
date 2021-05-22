@@ -4,11 +4,11 @@ description: Media queries 不只是一个 CSS 特性，也可以与 JavaScript 
 updatedAt: 2021-04-07
 ---
 
-**本文翻译自：《[Using media queries with JavaScript](https://dev.to/maroun_baydoun/using-media-queries-with-javascript-4aeo)**》。
+**本文翻译自：《[Using media queries with JavaScript]**》。
 
 Media queries 不只是一个 CSS 特性，也可以与 JavaScript 进行交互，本文将向您介绍具体的实现方法。
 
-> 如果您正在寻找现成的解决方案，不妨看下本文原作者开发的 lib：[mediaq](https://dev.maroun-baydoun.com/mediaq/).
+> 如果您正在寻找现成的解决方案，不妨看下本文原作者开发的 lib：[mediaq].
 
 ## window.matchMedia API
 
@@ -73,7 +73,7 @@ if (mediaQueryList.removeEventListener) {
 }
 ```
 
-阅读更多 [浏览器兼容性](https://developer.mozilla.org/zh-CN/docs/Web/API/MediaQueryList) 相关内容。
+阅读更多 [浏览器兼容性] 相关内容。
 
 ## 为什么要这么做
 
@@ -111,10 +111,19 @@ if (mediaQueryList.matches) {
 }
 ```
 
-JavaScript 也可以在不需要 media query 的帮助下检测 [屏幕分辨率](https://developer.mozilla.org/zh-CN/docs/Web/API/Screen)，不过这个行为是一次性的，可以通过监听浏览器窗口的 resize 事件进行跟踪，但是开销较大，使用 media queries 会更加高效。
+JavaScript 也可以在不需要 media query 的帮助下检测 [屏幕分辨率]，不过这个行为是一次性的，可以通过监听浏览器窗口的 resize 事件进行跟踪，但是开销较大，使用 media queries 会更加高效。
 
 ---
 
 ### 笔者提示
 
-> [react-use](https://github.com/streamich/react-use) 中的 \`[useMedia()](https://github.com/streamich/react-use/blob/master/src/useMedia.ts)\` 方法和 [vueuse](https://github.com/vueuse/vueuse) 中的 \`[useMediaQuery()](https://github.com/vueuse/vueuse/blob/main/packages/core/useMediaQuery/index.ts)\` 方法，它们的源代码均可作为实际产品参考。
+> [react-use] 中的 \`[useMedia()]\` 方法和 [vueuse] 中的 \`[useMediaQuery()]\` 方法，它们的源代码均可作为实际产品参考。
+
+[浏览器兼容性]: https://developer.mozilla.org/zh-CN/docs/Web/API/MediaQueryList
+[屏幕分辨率]: https://developer.mozilla.org/zh-CN/docs/Web/API/Screen
+[mediaq]: https://dev.maroun-baydoun.com/mediaq/
+[react-use]: https://github.com/streamich/react-use
+[usemedia()]: https://github.com/streamich/react-use/blob/master/src/useMedia.ts
+[usemediaquery()]: https://github.com/vueuse/vueuse/blob/main/packages/core/useMediaQuery/index.ts
+[using media queries with javascript]: https://dev.to/maroun_baydoun/using-media-queries-with-javascript-4aeo
+[vueuse]: https://github.com/vueuse/vueuse
