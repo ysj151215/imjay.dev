@@ -6,10 +6,10 @@
       </NuxtLink>
 
       <div class="flex items-center text-[#555555] dark:text-[#bbbbbb]">
-        <NuxtLink class="ml-5 text-base media-hover:hover:text-black dark:media-hover:hover:text-white" to="/posts">博客</NuxtLink>
+        <NuxtLink class="ml-5 text-base hover:text-black dark:hover:text-white" to="/posts">博客</NuxtLink>
         <a
           aria-label="我的 GitHub"
-          class="cursor-pointer h-[20px] ml-5 w-[20px] media-hover:hover:text-black dark:media-hover:hover:text-white"
+          class="cursor-pointer h-[20px] ml-5 w-[20px] hover:text-black dark:hover:text-white"
           rel="noreferrer"
           target="_blank"
           title="我的 GitHub"
@@ -23,7 +23,7 @@
         </a>
         <a
           aria-label="我的 Twitter"
-          class="cursor-pointer h-[20px] ml-5 w-[20px] media-hover:hover:text-black dark:media-hover:hover:text-white"
+          class="cursor-pointer h-[20px] ml-5 w-[20px] hover:text-black dark:hover:text-white"
           href="https://twitter.com/ysj151215"
           rel="noreferrer"
           target="_blank"
@@ -39,7 +39,7 @@
         </a>
         <a
           aria-label="切换主题"
-          class="cursor-pointer h-[20px] ml-5 w-[20px] media-hover:hover:text-black dark:media-hover:hover:text-white"
+          class="cursor-pointer h-[20px] ml-5 w-[20px] hover:text-black dark:hover:text-white"
           title="切换主题"
           @click.stop="toggleThemeMode"
         >
