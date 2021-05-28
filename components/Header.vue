@@ -10,6 +10,7 @@
         <a
           aria-label="我的 GitHub"
           class="cursor-pointer h-[20px] ml-5 w-[20px] hover:text-black dark:hover:text-white"
+          href="https://github.com/ysj151215"
           rel="noreferrer"
           target="_blank"
           title="我的 GitHub"
