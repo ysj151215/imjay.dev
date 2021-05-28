@@ -1,16 +1,8 @@
-const colors = require('tailwindcss/colors')
-
 module.exports = {
   mode: 'jit',
   darkMode: 'class',
   plugins: [require('@tailwindcss/typography')],
   theme: {
-    colors: {
-      current: 'currentColor',
-      transparent: 'transparent',
-      white: colors.white,
-      black: colors.black
-    },
     container: {
       center: true,
       screens: {
