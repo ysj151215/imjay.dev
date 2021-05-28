@@ -5,8 +5,11 @@
   "scripts": {
     "dev": "nuxt --open",
     "build": "nuxt build --analyze",
+    "build:modern": "nuxt build --modern=server",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "start:modern": "nuxt start --modern=server",
+    "generate": "nuxt generate",
+    "generate:modern": "nuxt generate --modern=server"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
