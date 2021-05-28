@@ -6,8 +6,6 @@
   text-underline-offset: 4px;
 }
 
-@variants media-hover {
-  .prose a:hover {
-    color: var(--fg-deeper);
-  }
+.prose a:hover {
+  color: var(--fg-deeper);
 }

@@ -1,7 +1,7 @@
 html {
   --c-bg: #fff;
   --c-scrollbar: #eee;
-  --c-scrollbar-hover: #bbb;
+  --c-scrollbar-hover: #ccc;
 
   --fg: #555;
   --fg-deep: #222;
@@ -14,8 +14,8 @@ html {
 
 html.dark {
   --c-bg: #050505;
-  --c-scrollbar: #111;
-  --c-scrollbar-hover: #222;
+  --c-scrollbar: #333;
+  --c-scrollbar-hover: #444;
 
   --fg: #bbb;
   --fg-deep: #ddd;

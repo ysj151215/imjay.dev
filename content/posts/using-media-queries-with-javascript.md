@@ -1,7 +1,7 @@
 ---
 title: 在 JavaScript 中使用 media queries
 description: Media queries 不只是一个 CSS 特性，也可以与 JavaScript 进行交互，本文将向您介绍具体的实现方法。
-updatedAt: 2021-04-07
+updatedAt: 2021-05-28
 ---
 
 **本文翻译自：《[Using media queries with JavaScript]**》。
@@ -15,7 +15,7 @@ Media queries 不只是一个 CSS 特性，也可以与 JavaScript 进行交互�
 `window.matchMedia` 是浏览器暴露出来的一个方法，它以「media query」作为参数，返回一个 `MediaQueryList` 对象。
 
 ```javascript
-const mediaQueryList = window.matchMedia('only screen and (max-width: 600px')
+const mediaQueryList = window.matchMedia('only screen and (max-width: 600px)')
 ```
 
 ## 检测 media query 是否匹配
@@ -92,7 +92,7 @@ if (mediaQueryList.removeEventListener) {
 而通过 JavaScript 您可以决定这个组件是否需要被嵌入到网页中去。
 
 ```javascript
-const mediaQueryList = window.matchMedia('only screen and (max-width: 480px')
+const mediaQueryList = window.matchMedia('only screen and (max-width: 480px)')
 
 if (!mediaQueryList.matches) {
   // 在此处创建/嵌入元素
@@ -102,7 +102,7 @@ if (!mediaQueryList.matches) {
 另一个使用场景是，在规定的屏幕尺寸下加载指定的脚本。如果您的应用运行了大型图形库，则可以选择仅在桌面端设备上显示这些图形。
 
 ```javascript
-const mediaQueryList = window.matchMedia('only screen and (min-width: 768px')
+const mediaQueryList = window.matchMedia('only screen and (min-width: 768px)')
 
 if (mediaQueryList.matches) {
   const script = document.createElement('script')

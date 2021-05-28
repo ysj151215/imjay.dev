@@ -1,33 +1,8 @@
-const colors = require('tailwindcss/colors')
-const plugin = require('tailwindcss/plugin')
-
 module.exports = {
   mode: 'jit',
   darkMode: 'class',
-  plugins: [
-    require('@tailwindcss/typography'),
-    plugin(function ({ addVariant, config, e, postcss }) {
-      const importantSelector = typeof config('important') === 'string' ? config('important') : null
-
-      addVariant('media-hover', ({ container, separator }) => {
-        const atRule = postcss.atRule({ name: 'media', params: '(hover: hover)' })
-        atRule.append(container.nodes)
-        container.append(atRule)
-        atRule.walkRules(rule => {
-          rule.selector = `${importantSelector ? importantSelector + ' ' : ''}.${e(`media-hover${separator}`)}${rule.selector.slice(
-            1 + (importantSelector ? importantSelector.length + 1 : 0)
-          )}`
-        })
-      })
-    })
-  ],
+  plugins: [require('@tailwindcss/typography')],
   theme: {
-    colors: {
-      current: 'currentColor',
-      transparent: 'transparent',
-      white: colors.white,
-      black: colors.black
-    },
     container: {
       center: true,
       screens: {
