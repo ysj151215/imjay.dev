@@ -8,6 +8,6 @@ module.exports = {
     parser: 'babel-eslint'
   },
   extends: ['@nuxtjs', 'plugin:prettier/recommended', 'plugin:nuxt/recommended'],
-  plugins: [],
+  plugins: ['tailwindcss'],
   rules: {}
 }
