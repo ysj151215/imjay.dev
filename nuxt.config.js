@@ -17,13 +17,11 @@ export default {
 
   css: ['@/assets/css/main.css'],
 
-  plugins: ['~/plugins/shortcuts.js'],
+  plugins: [{ src: '~/plugins/shortcuts.js', ssr: true }],
 
   components: true,
 
   buildModules: [
-    // https://color-mode.nuxtjs.org/
-    '@nuxtjs/color-mode',
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://github.com/nuxt-community/dayjs-module
@@ -45,11 +43,6 @@ export default {
         theme: '@/assets/css/prism.css'
       }
     }
-  },
-
-  // Color theme configuration: https://color-mode.nuxtjs.org/
-  colorMode: {
-    classSuffix: ''
   },
 
   // Day.js configuration: https://day.js.org/zh-CN/

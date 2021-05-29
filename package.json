@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
-    "@nuxtjs/color-mode": "^2.0.9",
     "@nuxtjs/dayjs": "^1.4.0",
     "@tailwindcss/typography": "^0.4.1",
     "@vue/composition-api": "1.0.0-rc.10",
