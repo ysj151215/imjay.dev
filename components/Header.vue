@@ -42,7 +42,7 @@
           aria-label="切换主题"
           class="cursor-pointer h-[20px] ml-5 w-[20px] hover:text-black dark:hover:text-white"
           title="切换主题"
-          @click.stop="toggleThemeMode"
+          @click.stop="toggleDark"
         >
           <svg class="hidden dark:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path
@@ -63,21 +63,11 @@
 </template>
 
 <script>
-import { usePreferredDark } from '@vueuse/core'
+import { toggleDark } from '@/plugins/shortcuts'
 
 export default {
   methods: {
-    toggleThemeMode() {
-      const isDark = usePreferredDark()
-
-      if (this.$colorMode.value === 'light') {
-        this.$colorMode.preference = 'dark'
-        if (isDark.value) this.$colorMode.preference = 'system'
-      } else {
-        this.$colorMode.preference = 'light'
-        if (!isDark.value) this.$colorMode.preference = 'system'
-      }
-    }
+    toggleDark
   }
 }
 </script>

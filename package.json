@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
-    "@nuxtjs/color-mode": "^2.0.9",
     "@nuxtjs/dayjs": "^1.4.0",
     "@tailwindcss/typography": "^0.4.1",
     "@vue/composition-api": "1.0.0-rc.10",
@@ -33,7 +32,8 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^7.9.0",
+    "eslint-plugin-tailwindcss": "^1.8.5",
+    "eslint-plugin-vue": "^7.10.0",
     "postcss": "^8.3.0",
     "prettier": "^2.3.0"
   }
