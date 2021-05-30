@@ -22,10 +22,15 @@ export default {
   components: true,
 
   buildModules: [
+    // https://composition-api.nuxtjs.org/
+    '@nuxtjs/composition-api/module',
+
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+
     // https://github.com/nuxt-community/dayjs-module
     '@nuxtjs/dayjs',
+
     // https://tailwindcss.nuxtjs.org/
     '@nuxtjs/tailwindcss'
   ],

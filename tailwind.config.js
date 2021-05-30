@@ -28,11 +28,17 @@ module.exports = {
       xs: { max: '425px' }
     },
     extend: {
+      colors: {
+        'c-bg': 'var(--c-bg)',
+        fg: 'var(--fg)',
+        'fg-deep': 'var(--fg-deep)'
+      },
       typography: () => ({
         DEFAULT: {
           css: {
             color: 'var(--fg)',
             a: { color: 'var(--fg-deep)' },
+            'a:hover': { color: 'var(--fg-deeper)' },
             b: { color: 'var(--fg-deep)' },
             code: { color: 'var(--fg-deep)' },
             strong: { color: 'var(--fg-deep)' },
