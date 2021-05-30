@@ -16,7 +16,7 @@
     "@nuxtjs/dayjs": "^1.4.0",
     "@nuxtjs/composition-api": "^0.24.2",
     "@tailwindcss/typography": "^0.4.1",
-    "@vueuse/core": "^4.11.1",
+    "@vueuse/core": "^4.11.2",
     "core-js": "^3.13.1",
     "medium-zoom": "^1.0.6",
     "nuxt": "^2.15.6",
