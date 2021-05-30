@@ -38,9 +38,9 @@
             </g>
           </svg>
         </a>
-        <a
+        <button
           aria-label="切换主题"
-          class="cursor-pointer h-[20px] ml-5 w-[20px] hover:text-black dark:hover:text-white"
+          class="appearance-none outline-none border-none bg-none cursor-pointer h-[20px] ml-5 w-[20px] hover:text-black dark:hover:text-white"
           title="切换主题"
           @click.stop="toggleDark"
         >
@@ -56,7 +56,7 @@
               fill="currentColor"
             />
           </svg>
-        </a>
+        </button>
       </div>
     </nav>
   </header>

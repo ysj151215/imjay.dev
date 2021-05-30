@@ -6,6 +6,9 @@
   text-underline-offset: 4px;
 }
 
-.prose a:hover {
-  color: var(--fg-deeper);
+.prose a,
+header a,
+header button {
+  @apply rounded-md;
+  @apply focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-fg-deep focus-within:ring-offset-c-bg;
 }
