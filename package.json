@@ -1,6 +1,6 @@
 {
   "name": "blog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "dev": "nuxt --open",
@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
-    "@nuxtjs/dayjs": "^1.4.0",
     "@nuxtjs/composition-api": "^0.24.2",
     "@tailwindcss/typography": "^0.4.1",
     "@vueuse/core": "^4.11.2",
@@ -32,7 +31,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-tailwindcss": "^1.9.0",
+    "eslint-plugin-tailwindcss": "^1.9.1",
     "eslint-plugin-vue": "^7.10.0",
     "postcss": "^8.3.0",
     "prettier": "^2.3.0"
