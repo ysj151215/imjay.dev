@@ -1,7 +1,7 @@
 <template>
   <div class="container flex flex-col flex-auto w-full m-auto md:block">
     <article data-nosnippet class="w-full py-10 mx-auto prose outline-none dark:prose-dark">
-      <p class="text-sm">最后修改日期：{{ $dayjs(page.updatedAt).utc().format('YYYY-MM-DD') }}</p>
+      <p class="text-sm">最后修改日期：{{ new Date(page.updatedAt).toLocaleDateString('zh-CN') }}</p>
       <h1>{{ page.title }}</h1>
       <NuxtContent :document="page" />
       <Footer />
