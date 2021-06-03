@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
-    "@nuxtjs/composition-api": "^0.24.2",
+    "@nuxtjs/composition-api": "^0.24.3",
     "@tailwindcss/typography": "^0.4.1",
     "@vueuse/core": "^4.11.2",
     "core-js": "^3.13.1",
