@@ -18,7 +18,7 @@
     "@vueuse/core": "^5.0.3",
     "core-js": "^3.14.0",
     "medium-zoom": "^1.0.6",
-    "nuxt": "^2.15.6",
+    "nuxt": "^2.15.7",
     "prism-theme-vars": "^0.2.2"
   },
   "devDependencies": {
@@ -33,7 +33,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-tailwindcss": "^1.13.2",
     "eslint-plugin-vue": "^7.11.1",
-    "postcss": "^8.3.3",
+    "postcss": "^8.3.4",
     "prettier": "^2.3.1"
   }
 }
