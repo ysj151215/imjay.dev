@@ -27,7 +27,7 @@ updatedAt: 2021-06-20
 
 **以下内容节选自 《[HTML Tips]》。**
 
-- `<base>` 标签：当你决定让页面中的所有 `<a>` 都默认在新标签页中打开时，可以用该标签实现。Demo：[https://codepen.io/denic/pen/yLYYwJp]。
+- `<base>` 标签：当你决定让页面中的所有 `<a>` 都默认在新标签页中打开时，可以用该标签实现。
 
 ```html
 <head>
@@ -53,4 +53,3 @@ updatedAt: 2021-06-20
 [demo]: https://000626464.deployed.codepen.website/
 [html tips]: https://markodenic.com/html-tips/
 [target=blank]: https://css-tricks.com/targetblank/
-[https://codepen.io/denic/pen/ylyywjp]: https://codepen.io/denic/pen/yLYYwJp
