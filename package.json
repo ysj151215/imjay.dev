@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
-    "@nuxtjs/composition-api": "^0.24.5",
+    "@nuxtjs/composition-api": "^0.24.6",
     "@tailwindcss/typography": "^0.4.1",
     "@vueuse/core": "^5.0.3",
-    "core-js": "^3.15.1",
+    "core-js": "^3.15.2",
     "medium-zoom": "^1.0.6",
     "nuxt": "^2.15.7",
     "prism-theme-vars": "^0.2.2"
@@ -27,7 +27,7 @@
     "@nuxtjs/tailwindcss": "^4.2.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.29.0",
+    "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.4.0",
