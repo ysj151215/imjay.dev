@@ -15,8 +15,8 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/composition-api": "^0.26.0",
     "@tailwindcss/typography": "^0.4.1",
-    "@vueuse/core": "^5.2.0",
-    "core-js": "^3.16.0",
+    "@vueuse/core": "^5.3.0",
+    "core-js": "^3.16.1",
     "medium-zoom": "^1.0.6",
     "nuxt": "^2.15.7",
     "prism-theme-vars": "^0.2.2"
@@ -32,7 +32,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-tailwindcss": "^1.14.1",
-    "eslint-plugin-vue": "^7.15.1",
+    "eslint-plugin-vue": "^7.15.2",
     "postcss": "^8.3.6",
     "prettier": "^2.3.2"
   }
