@@ -56,6 +56,16 @@ export default {
   build: {
     babel: {
       plugins: [['@babel/plugin-proposal-private-property-in-object', { loose: true }]]
+    },
+
+    // "Can't import the named export 'xxx' from non EcmaScript module..."
+    // Solution: https://github.com/vueuse/vueuse/issues/718#issuecomment-913319680
+    extend(config) {
+      config.module.rules.push({
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: 'javascript/auto'
+      })
     }
   }
 }

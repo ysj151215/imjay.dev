@@ -13,9 +13,9 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
-    "@nuxtjs/composition-api": "^0.27.0",
+    "@nuxtjs/composition-api": "^0.28.0",
     "@tailwindcss/typography": "^0.4.1",
-    "@vueuse/core": "^6.1.0",
+    "@vueuse/core": "^6.2.1",
     "core-js": "^3.17.2",
     "medium-zoom": "^1.0.6",
     "nuxt": "^2.15.8",
