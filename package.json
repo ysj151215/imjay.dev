@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
-    "@nuxtjs/composition-api": "^0.28.0",
+    "@nuxtjs/composition-api": "^0.29.0",
     "@tailwindcss/typography": "^0.4.1",
-    "@vueuse/core": "^6.2.1",
-    "core-js": "^3.17.2",
+    "@vueuse/core": "^6.3.2",
+    "core-js": "^3.17.3",
     "medium-zoom": "^1.0.6",
     "nuxt": "^2.15.8",
     "prism-theme-vars": "^0.2.2"
@@ -34,6 +34,6 @@
     "eslint-plugin-tailwindcss": "^1.14.3",
     "eslint-plugin-vue": "^7.17.0",
     "postcss": "^8.3.6",
-    "prettier": "^2.3.2"
+    "prettier": "^2.4.0"
   }
 }
