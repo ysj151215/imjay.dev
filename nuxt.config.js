@@ -17,17 +17,13 @@ export default {
 
   css: ['@/assets/css/main.css'],
 
-  plugins: [{ src: '~/plugins/shortcuts.js', ssr: true }],
+  plugins: [],
 
   components: true,
 
   buildModules: [
-    // https://composition-api.nuxtjs.org/
-    '@nuxtjs/composition-api/module',
-
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-
     // https://tailwindcss.nuxtjs.org/
     '@nuxtjs/tailwindcss'
   ],
