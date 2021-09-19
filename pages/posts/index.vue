@@ -1,5 +1,6 @@
 <template>
   <div class="container flex flex-col flex-auto w-full m-auto md:block">
+    <Header />
     <article data-nosnippet class="w-full py-10 mx-auto prose outline-none dark:prose-dark">
       <h1>文章</h1>
       <ul>
