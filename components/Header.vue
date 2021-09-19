@@ -1,6 +1,6 @@
 <template>
   <header class="flex w-full bg-transparent select-none">
-    <nav class="container flex items-center justify-between w-full py-8">
+    <nav class="flex items-center justify-between w-full py-8">
       <NuxtLink aria-label="首页" class="bg-[#555555] block rounded-full overflow-hidden dark:bg-[#bbbbbb]" title="首页" to="/">
         <img alt="Site logo" height="30px" src="~@/static/apple-touch-icon.png" width="30px" />
       </NuxtLink>
