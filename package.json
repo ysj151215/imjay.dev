@@ -1,6 +1,7 @@
 {
   "name": "blog",
   "version": "2.0.0",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "vite --open",
     "build": "vite-ssg build",
@@ -10,7 +11,8 @@
     "node": ">=14"
   },
   "dependencies": {
-    "vue": "^3.2.20"
+    "vue": "^3.2.20",
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.4",
