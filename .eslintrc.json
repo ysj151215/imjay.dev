@@ -1,0 +1,7 @@
+{
+  "extends": "next/core-web-vitals",
+  /* https://stackoverflow.com/a/53994887 */
+  "rules": {
+    "react/no-unescaped-entities": 0
+  }
+}

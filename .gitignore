@@ -1,5 +1,20 @@
+# dependencies
 node_modules
+
+# next.js
+.next
+
+# misc
 .DS_Store
-dist
-dist-ssr
-*.local
+
+# debug
+*.log
+
+# local env files
+.env
+
+# vercel
+.vercel
+
+# contentlayer
+.contentlayer

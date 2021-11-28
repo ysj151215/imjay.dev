@@ -1,6 +1,5 @@
 {
-  "recommendations": [
-    "johnsoncodehk.volar",
-    "voorjaar.windicss-intellisense"
-  ]
+	"recommendations": [
+		"voorjaar.windicss-intellisense"
+	]
 }
