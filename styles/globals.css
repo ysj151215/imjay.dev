@@ -1,0 +1,31 @@
+@windicss;
+
+html {
+  @apply bg-gray-900;
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: #fefefe;
+  background-color: #47a3f3;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* https://seek-oss.github.io/capsize/ */
+.capsize::before {
+  content: '';
+  display: table;
+  margin-bottom: -0.098em;
+}
+
+.capsize::after {
+  content: '';
+  display: table;
+  margin-top: -0.219em;
+}

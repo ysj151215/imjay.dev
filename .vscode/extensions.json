@@ -1,8 +1,5 @@
 {
 	"recommendations": [
-		"bradlc.vscode-tailwindcss",
-		"dbaeumer.vscode-eslint",
-		"heybourn.headwind",
-		"octref.vetur",
+		"voorjaar.windicss-intellisense"
 	]
 }

@@ -1,12 +1,20 @@
-dist
+# dependencies
 node_modules
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.cache
+
+# next.js
+.next
+
+# misc
 .DS_Store
+
+# debug
+*.log
+
+# local env files
 .env
-.eslintcache
-.npm
-.nuxt
-.nvmrc
+
+# vercel
+.vercel
+
+# contentlayer
+.contentlayer
