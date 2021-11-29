@@ -28,7 +28,16 @@ class MyDocument extends Document {
             href="/favicon-16x16.png"
           />
           <link rel="manifest" href="/site.webmanifest" />
-          <meta name="theme-color" content="#111111" />
+          <meta
+            name="theme-color"
+            content="#f9fafb"
+            media="(prefers-color-scheme: light)"
+          />
+          <meta
+            name="theme-color"
+            content="#111111"
+            media="(prefers-color-scheme: dark)"
+          />
         </Head>
         <body className="text-black dark:text-white font-sans min-w-80">
           <Main />
