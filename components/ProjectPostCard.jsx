@@ -29,11 +29,11 @@ export default function ProjectPostCard({
           priority
         />
         <div className="flex flex-col justify-between mt-4 md:flex-row">
-          <h4 className="w-full mb-2 text-lg md:text-xl font-medium text-gray-100">
+          <h4 className="w-full mb-2 text-lg font-medium text-gray-900 md:text-xl dark:text-gray-100">
             {title}
           </h4>
         </div>
-        <p className="text-gray-400">{description}</p>
+        <p className="text-gray-600 dark:text-gray-400">{description}</p>
       </div>
     </a>
   )

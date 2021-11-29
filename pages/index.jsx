@@ -40,14 +40,14 @@ export default function Home({ mostRecentPostsData }) {
       <div className="flex flex-col justify-center items-start max-w-2xl border-gray-700 mx-auto pb-16">
         <div className="flex flex-col-reverse sm:flex-row items-start">
           <div className="flex flex-col sm:pr-8">
-            <h1 className="font-bold text-3xl md:text-5xl mb-1 text-white">
+            <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
               Jay
             </h1>
-            <h2 className="text-gray-200 mb-4">
+            <h2 className="text-gray-700 dark:text-gray-200 mb-4">
               前端工程师，目前在 <span className="font-semibold">DevHub</span>{' '}
               任职。
             </h2>
-            <p className="text-gray-400 mb-16">
+            <p className="text-gray-600 dark:text-gray-400 mb-16">
               独立开发者、远程工作者、Porsche 车迷、The Weeknd
               歌迷。希望某天可以开着自己的 Dream Car、放着 The Weeknd
               的歌、载着她去一个舒适宜人的地方写代码。
@@ -63,7 +63,7 @@ export default function Home({ mostRecentPostsData }) {
             />
           </div>
         </div>
-        <h3 className="font-bold text-2xl md:text-4xl mb-6 text-white">
+        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
           最近发布
         </h3>
         <div className="flex gap-6 w-full flex-col md:flex-row">
@@ -78,7 +78,7 @@ export default function Home({ mostRecentPostsData }) {
           ))}
         </div>
         <Link href="/blog">
-          <a className="flex items-center mt-8 text-gray-400 hover:text-gray-200 leading-7 rounded-lg transition-all h-6">
+          <a className="flex items-center mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
             查看所有
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -96,10 +96,10 @@ export default function Home({ mostRecentPostsData }) {
             </svg>
           </a>
         </Link>
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-white">
+        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 mt-16 text-black dark:text-white">
           个人作品
         </h3>
-        <p className="text-gray-400 mb-8">
+        <p className="text-gray-600 dark:text-gray-400 mb-8">
           从使用别人开发的产品，到自己开发，再到将工具分享给大家，每一个项目都是一段值得探索、回味的经历。即便有些失败了，也要继续努力。
         </p>
         <ProjectPostCard
@@ -112,7 +112,7 @@ export default function Home({ mostRecentPostsData }) {
           description="在线 SVG to Base64 转码工具，基于 Vue.js、Vite.js、Tailwind CSS 和 Modern Web APIs 开发，支持多文件同时转码，输出多种格式。"
         />
         <Link href="/projects">
-          <a className="flex items-center mt-2 text-gray-400 hover:text-gray-200 leading-7 rounded-lg transition-all h-6">
+          <a className="flex items-center mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
             所有作品
             <svg
               xmlns="http://www.w3.org/2000/svg"

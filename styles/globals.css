@@ -1,9 +1,25 @@
 @windicss;
 
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center min-w-32 px-6 py-3;
+    @apply text-base font-medium text-black bg-gray-200;
+    @apply dark:text-white dark:bg-gray-800;
+    @apply border border-transparent rounded-md transition;
+    @apply hover:bg-opacity-50 dark:hover:bg-gray-700;
+    @apply focus:ring-2 focus:ring-gray-300 focus:outline-none;
+    @apply disabled:text-gray-300 disabled:dark:text-gray-400 disabled:cursor-not-allowed;
+  }
+}
+
 html {
-  @apply bg-gray-900;
+  @apply bg-gray-50;
   min-width: 320px;
   scroll-behavior: smooth;
+}
+
+html.dark {
+  @apply bg-gray-900;
 }
 
 ::selection {

@@ -30,7 +30,7 @@ class MyDocument extends Document {
           <link rel="manifest" href="/site.webmanifest" />
           <meta name="theme-color" content="#111111" />
         </Head>
-        <body className="text-white font-sans min-w-80">
+        <body className="text-black dark:text-white font-sans min-w-80">
           <Main />
           <NextScript />
         </body>

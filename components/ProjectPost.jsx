@@ -13,7 +13,7 @@ export default function ProjectPost({
     if (href) {
       return (
         <a
-          className="inline-flex mt-6 min-w-32 items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none"
+          className="btn mt-6"
           href={href}
           rel="noopener noreferrer"
           target="_blank"
@@ -23,10 +23,7 @@ export default function ProjectPost({
       )
     } else {
       return (
-        <button
-          className="inline-flex mt-6 min-w-32 items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none cursor-not-allowed !text-gray-500"
-          disabled
-        >
+        <button className="btn mt-6" disabled>
           已下架
         </button>
       )
@@ -44,11 +41,11 @@ export default function ProjectPost({
         priority
       />
       <div className="flex flex-col justify-between mt-5 md:flex-row">
-        <h3 className="w-full mb-2 text-lg md:text-xl font-medium text-gray-100">
+        <h3 className="w-full mb-2 text-lg font-medium text-gray-900 md:text-xl dark:text-gray-100">
           {title}
         </h3>
       </div>
-      <p className="text-gray-400">{description}</p>
+      <p className="text-gray-600 dark:text-gray-400">{description}</p>
       <CustomBtnTag />
     </div>
   )
