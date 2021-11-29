@@ -6,5 +6,5 @@ module.exports = withContentlayer()({
   webpack(config) {
     config.plugins.push(new WindiCSSWebpackPlugin())
     return config
-  },
+  }
 })

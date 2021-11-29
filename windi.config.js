@@ -12,60 +12,71 @@ const customColors = {
     600: '#444444',
     700: '#333333',
     800: '#222222',
-    900: '#111111',
-  },
+    900: '#111111'
+  }
 }
 
 export default defineConfig({
   /* https://windicss.org/integrations/webpack.html#next-js */
   extract: {
     include: ['**/*.{jsx,js,css,html}'],
-    exclude: ['node_modules', '.git', '.next'],
+    exclude: ['node_modules', '.git', '.next']
   },
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        gray: customColors.gray,
+        gray: customColors.gray
       },
       typography: {
         DEFAULT: {
           css: {
-            color: customColors.gray[200],
-            'h2, h3, h4': {
-              color: customColors.gray[100],
-              'scroll-margin-top': 'p-[32]',
-            },
+            color: customColors.gray[700],
             a: {
-              color: '#f19c79',
-              '&:hover': { color: '#dd6e42' },
-              code: { color: colors.blue[400] },
+              color: colors.blue[500],
+              '&:hover': { color: colors.blue[800] },
+              code: { color: colors.blue[400] }
             },
-            strong: { color: customColors.gray[100] },
+            'h2, h3, h4': { 'scroll-margin-top': 'spacing-32' },
+            thead: { borderBottomColor: customColors.gray[200] },
+            code: { color: customColors.gray[500] },
+            'blockquote p:first-of-type::before': false,
+            'blockquote p:last-of-type::after': false
+          }
+        },
+        dark: {
+          css: {
+            color: customColors.gray[200],
+            a: {
+              color: colors.blue[400],
+              '&:hover': { color: colors.blue[600] }
+            },
+            blockquote: {
+              borderLeftColor: customColors.gray[700],
+              color: customColors.gray[300]
+            },
+            'h2, h3, h4': { color: customColors.gray[100] },
+            hr: { borderColor: customColors.gray[700] },
             ol: { li: { '&:before': { color: customColors.gray[500] } } },
             ul: {
-              li: { '&:before': { backgroundColor: customColors.gray[500] } },
+              li: { '&:before': { backgroundColor: customColors.gray[500] } }
             },
-            hr: { borderColor: customColors.gray[700] },
+            strong: { color: customColors.gray[100] },
             thead: {
               color: customColors.gray[100],
-              borderBottomColor: customColors.gray[600],
+              borderBottomColor: customColors.gray[600]
             },
-            tbody: { tr: { borderBottomColor: customColors.gray[700] } },
-            pre: { fontFamily: 'menlo' },
-            code: { color: colors.pink[500] },
-            blockquote: {
-              color: customColors.gray[300],
-              borderLeftColor: customColors.gray[700],
-            },
-            'blockquote p:first-of-type::before': false,
-            'blockquote p:last-of-type::after': false,
-          },
-        },
-      },
-    },
+            tbody: { tr: { borderBottomColor: customColors.gray[700] } }
+          }
+        }
+      }
+    }
+  },
+  variants: {
+    typography: ['dark']
   },
   plugins: [
-    require('windicss/plugin/typography'),
+    require('windicss/plugin/typography')
     // ...
-  ],
+  ]
 })

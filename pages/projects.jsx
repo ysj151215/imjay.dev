@@ -15,11 +15,11 @@ export default function Projects() {
       </Head>
       <Container>
         <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
-          <h1 className="mb-4 text-3xl font-bold md:text-5xl text-white">
+          <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
             {metaTitle}
           </h1>
-          <p className="mb-12 text-gray-400">{metaDesc}</p>
-          <div className="divide-y divide-gray-800">
+          <p className="mb-12 text-gray-600 dark:text-gray-400">{metaDesc}</p>
+          <div className="divide-y divide-gray-200 dark:divide-gray-800">
             <ProjectPost
               className="pb-10"
               href="https://b64.imjay.dev/"
