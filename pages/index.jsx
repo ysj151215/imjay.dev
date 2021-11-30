@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useSpring, animated } from '@react-spring/web'
+import { useDrag } from '@use-gesture/react'
 import { allBlogs } from '.contentlayer/data'
 import BlogPostCard from '../components/BlogPostCard'
 import Container from '../components/Container'
@@ -27,6 +29,13 @@ export async function getStaticProps() {
 }
 
 export default function Home({ mostRecentPostsData }) {
+  const [{ x, y }, api] = useSpring(() => ({ x: 0, y: 0 }))
+
+  // Set the drag hook and define component movement based on gesture data
+  const bind = useDrag(({ down, movement: [mx, my] }) => {
+    api.start({ x: down ? mx : 0, y: down ? my : 0, immediate: down })
+  })
+
   return (
     <Container>
       <Head>
@@ -54,13 +63,24 @@ export default function Home({ mostRecentPostsData }) {
             </p>
           </div>
           <div className="w-80px sm:w-122px flex-none select-none relative mb-8 sm:mb-0 mr-auto">
-            <Image
-              className="rounded-full"
-              alt="我是 Jay"
-              height={122}
-              width={122}
-              src="/images/hero.jpeg"
-            />
+            <animated.div
+              {...bind()}
+              style={{
+                x,
+                y,
+                position: 'relative',
+                touchAction: 'none',
+                zIndex: '99'
+              }}
+            >
+              <Image
+                className="rounded-full avatar-img"
+                alt="我是 Jay"
+                height={122}
+                width={122}
+                src="/images/hero.jpeg"
+              />
+            </animated.div>
           </div>
         </div>
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">

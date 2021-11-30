@@ -45,3 +45,13 @@ html.dark {
   display: table;
   margin-top: -0.219em;
 }
+
+.avatar-img {
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  position: relative;
+  z-index: 99;
+}
