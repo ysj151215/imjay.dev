@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useMedia } from 'react-use'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useTheme } from 'next-themes'
@@ -31,6 +32,24 @@ export default function Header() {
   // After mounting, we have access to the theme
   useEffect(() => setMounted(true), [])
 
+  const prefersColorScheme = useMedia('(prefers-color-scheme: dark)')
+    ? 'dark'
+    : 'light'
+
+  const setGlobalTheme = () => {
+    if (mounted) {
+      if (prefersColorScheme === 'dark') {
+        resolvedTheme === prefersColorScheme
+          ? setTheme('light')
+          : setTheme('system')
+      } else {
+        resolvedTheme === prefersColorScheme
+          ? setTheme('dark')
+          : setTheme('system')
+      }
+    }
+  }
+
   return (
     <div className="flex flex-col justify-center px-8">
       <nav className="flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16  text-gray-900 dark:text-gray-100">
@@ -43,7 +62,7 @@ export default function Header() {
           aria-label="切换主题模式"
           type="button"
           className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center hover:ring-2 focus:ring-2 ring-gray-300 appearance-none border-none focus:outline-none transition-all"
-          onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+          onClick={() => setGlobalTheme()}
         >
           {mounted && (
             <svg
