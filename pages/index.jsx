@@ -112,7 +112,7 @@ export default function Home({ mostRecentPostsData }) {
           description="在线 SVG to Base64 转码工具，基于 Vue.js、Vite.js、Tailwind CSS 和 Modern Web APIs 开发，支持多文件同时转码，输出多种格式。"
         />
         <Link href="/projects">
-          <a className="flex items-center mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
+          <a className="flex items-center mt-2 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
             所有作品
             <svg
               xmlns="http://www.w3.org/2000/svg"
