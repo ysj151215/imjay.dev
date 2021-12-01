@@ -3,7 +3,7 @@ import cn from 'classnames'
 import dayjs from '../lib/day'
 
 export default function BlogPostCard({ gradient, slug, title, updatedAt }) {
-  const dateFormatter = date => {
+  const formatDate = date => {
     if (dayjs.utc().isSame(dayjs.utc(date), 'year')) {
       return dayjs.utc(date).format('MM-DD')
     } else {
@@ -40,7 +40,7 @@ export default function BlogPostCard({ gradient, slug, title, updatedAt }) {
               />
             </svg>
             <span className="ml-2 align-baseline capsize">
-              {dateFormatter(updatedAt)}
+              {formatDate(updatedAt)}
             </span>
           </div>
         </div>

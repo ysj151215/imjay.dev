@@ -3,7 +3,7 @@ import dayjs from '../lib/day'
 import Container from '../components/Container'
 
 export default function BlogLayout({ blog, children }) {
-  const dateFormatter = date => {
+  const formatDate = date => {
     return dayjs.utc(date).format('YYYY 年 MM 月 DD 日')
   }
 
@@ -23,7 +23,7 @@ export default function BlogLayout({ blog, children }) {
               src="/images/hero.jpeg"
             />
             <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">
-              {dateFormatter(blog.updatedAt)}
+              {formatDate(blog.updatedAt)}
             </p>
           </div>
         </div>

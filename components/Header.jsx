@@ -36,7 +36,7 @@ export default function Header() {
     ? 'dark'
     : 'light'
 
-  const setGlobalTheme = () => {
+  const setSystemTheme = () => {
     if (mounted) {
       if (prefersColorScheme === 'dark') {
         resolvedTheme === prefersColorScheme
@@ -62,7 +62,7 @@ export default function Header() {
           aria-label="切换主题模式"
           type="button"
           className="flex items-center justify-center w-9 h-9 bg-gray-200 dark:bg-gray-600 rounded-lg hover:ring-2 focus:ring-2 ring-gray-300 focus:outline-none appearance-none border-none transition-all"
-          onClick={() => setGlobalTheme()}
+          onClick={() => setSystemTheme()}
         >
           {mounted && (
             <svg
