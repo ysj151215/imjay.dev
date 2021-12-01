@@ -2,7 +2,7 @@ import Image from 'next/image'
 import dayjs from '../lib/day'
 import Container from '../components/Container'
 
-export default function BlogLayout({ children, blog }) {
+export default function BlogLayout({ blog, children }) {
   const dateFormatter = date => {
     return dayjs.utc(date).format('YYYY 年 MM 月 DD 日')
   }
@@ -10,7 +10,7 @@ export default function BlogLayout({ children, blog }) {
   return (
     <Container>
       <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+        <h1 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-black dark:text-white">
           {blog.title}
         </h1>
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between w-full mt-2">
@@ -27,7 +27,7 @@ export default function BlogLayout({ children, blog }) {
             </p>
           </div>
         </div>
-        <div className="w-full mt-4 prose dark:prose-dark max-w-none">
+        <div className="w-full max-w-none mt-4 prose dark:prose-dark">
           {children}
         </div>
       </article>

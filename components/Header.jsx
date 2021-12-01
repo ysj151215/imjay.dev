@@ -52,7 +52,7 @@ export default function Header() {
 
   return (
     <div className="flex flex-col justify-center px-8">
-      <nav className="flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16  text-gray-900 dark:text-gray-100">
+      <nav className="flex items-center justify-between relative w-full max-w-2xl mx-auto pt-8 pb-8 sm:pb-16 border-gray-200 dark:border-gray-700  text-gray-900 dark:text-gray-100">
         <div className="-ml-0.60rem">
           <NavItem href="/" text="概览" />
           <NavItem href="/blog" text="博客" />
@@ -61,7 +61,7 @@ export default function Header() {
         <button
           aria-label="切换主题模式"
           type="button"
-          className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center hover:ring-2 focus:ring-2 ring-gray-300 appearance-none border-none focus:outline-none transition-all"
+          className="flex items-center justify-center w-9 h-9 bg-gray-200 dark:bg-gray-600 rounded-lg hover:ring-2 focus:ring-2 ring-gray-300 focus:outline-none appearance-none border-none transition-all"
           onClick={() => setGlobalTheme()}
         >
           {mounted && (

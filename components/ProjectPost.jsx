@@ -2,12 +2,12 @@ import Image from 'next/image'
 
 export default function ProjectPost({
   className,
+  description,
+  height,
   href,
   src,
-  height,
-  width,
   title,
-  description
+  width
 }) {
   const CustomBtnTag = () => {
     if (href) {
@@ -41,7 +41,7 @@ export default function ProjectPost({
         priority
       />
       <div className="flex flex-col justify-between mt-5 md:flex-row">
-        <h3 className="w-full mb-2 text-lg font-medium text-gray-900 md:text-xl dark:text-gray-100">
+        <h3 className="w-full mb-2 text-lg md:text-xl font-medium text-gray-900 dark:text-gray-100">
           {title}
         </h3>
       </div>

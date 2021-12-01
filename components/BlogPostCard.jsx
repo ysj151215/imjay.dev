@@ -2,7 +2,7 @@ import Link from 'next/link'
 import cn from 'classnames'
 import dayjs from '../lib/day'
 
-export default function BlogPostCard({ title, slug, updatedAt, gradient }) {
+export default function BlogPostCard({ gradient, slug, title, updatedAt }) {
   const dateFormatter = date => {
     if (dayjs.utc().isSame(dayjs.utc(date), 'year')) {
       return dayjs.utc(date).format('MM-DD')
@@ -15,12 +15,11 @@ export default function BlogPostCard({ title, slug, updatedAt, gradient }) {
     <Link href={`/blog/${slug}`}>
       <a
         className={cn(
-          'transform hover:scale-101 transition-all',
-          'rounded-xl w-full md:w-1/3 bg-gradient-to-r p-1',
+          'p-1 w-full md:w-1/3 bg-gradient-to-r rounded-xl transform transition-all hover:scale-101',
           gradient
         )}
       >
-        <div className="flex flex-col justify-between h-full bg-white dark:bg-black rounded-lg p-4">
+        <div className="flex flex-col justify-between h-full p-4 bg-white dark:bg-black rounded-lg">
           <div className="flex flex-col md:flex-row justify-between">
             <h4 className="text-lg md:text-lg font-medium mb-6 sm:mb-10 w-full text-gray-900 dark:text-gray-100 tracking-tight">
               {title}

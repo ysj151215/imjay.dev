@@ -31,11 +31,11 @@ export default function Projects({ use }) {
       </Head>
       <Container>
         <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
-          <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+          <h1 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-black dark:text-white">
             {metaTitle}
           </h1>
           <p className="mb-12 text-gray-600 dark:text-gray-400">{metaDesc}</p>
-          <div className="w-full prose dark:prose-dark max-w-2xl">
+          <div className="w-full max-w-2xl prose dark:prose-dark">
             <RoundedImage
               alt="物品清单"
               className="rounded-lg"

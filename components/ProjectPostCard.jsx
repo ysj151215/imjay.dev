@@ -2,21 +2,21 @@ import Image from 'next/image'
 
 export default function ProjectPostCard({
   index,
-  src,
+  description,
   height,
-  width,
   href,
+  src,
   title,
-  description
+  width
 }) {
   return (
     <a
-      className="flex transform hover:scale-101 transition-all"
+      className="flex transform transition-all hover:scale-101"
       href={href}
       rel="noopener noreferrer"
       target="_blank"
     >
-      <div className="text-gray-300 dark:text-gray-400 text-left mr-6">
+      <div className="mr-6 text-gray-300 dark:text-gray-400 text-left">
         {index}
       </div>
       <div className="w-full mb-8">
@@ -28,8 +28,8 @@ export default function ProjectPostCard({
           width={width}
           priority
         />
-        <div className="flex flex-col justify-between mt-4 md:flex-row">
-          <h4 className="w-full mb-2 text-lg font-medium text-gray-900 md:text-xl dark:text-gray-100">
+        <div className="flex flex-col md:flex-row justify-between mt-4">
+          <h4 className="w-full mb-2 font-medium text-lg md:text-xl text-gray-900 dark:text-gray-100">
             {title}
           </h4>
         </div>
