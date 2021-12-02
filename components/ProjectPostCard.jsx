@@ -16,7 +16,7 @@ export default function ProjectPostCard({
       rel="noopener noreferrer"
       target="_blank"
     >
-      <div className="mr-6 text-gray-300 dark:text-gray-400 text-left">
+      <div className="mr-6 text-gray-500 dark:text-gray-400 text-left">
         {index}
       </div>
       <div className="w-full mb-8">
