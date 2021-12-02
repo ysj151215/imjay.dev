@@ -55,6 +55,9 @@ export default function Footer() {
           <ExternalLink href="https://twitter.com/ysj151215">
             Twitter
           </ExternalLink>
+          <ExternalLink href="https://unsplash.com/@ysj151215">
+            Unsplash
+          </ExternalLink>
         </div>
       </div>
     </footer>
