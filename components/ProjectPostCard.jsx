@@ -26,7 +26,6 @@ export default function ProjectPostCard({
           src={src}
           height={height}
           width={width}
-          priority
         />
         <div className="flex flex-col md:flex-row justify-between mt-4">
           <h4 className="w-full mb-2 font-medium text-lg md:text-xl text-gray-900 dark:text-gray-100">
