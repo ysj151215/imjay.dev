@@ -8,6 +8,7 @@ export default function Custom404() {
       <Head>
         <title>404 - Jay</title>
         <meta content="网页或文件未找到" name="description" />
+        <meta property="og:title" content="404 - Jay" />
       </Head>
       <div className="flex flex-col justify-center items-start w-full max-w-2xl mx-auto mb-16">
         <h1 className="mb-4 font-bold text-3xl md:text-5xl tracking-tight text-black dark:text-white">

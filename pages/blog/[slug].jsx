@@ -35,6 +35,7 @@ export default function Blog({ blog }) {
       <Head>
         <title>{blog.title} - Jay</title>
         <meta content={blog.description} name="description" />
+        <meta property="og:title" content={`${blog.title} - Jay`} />
       </Head>
       <article>
         <Component components={{ Image: RoundedImage }} />

@@ -42,8 +42,12 @@ export default function Home({ mostRecentPostsData }) {
       <Head>
         <title>Jay - 程序员、远程工作者、Porsche 车迷、The Weeknd 歌迷</title>
         <meta
-          content="独立开发者、远程工作者、Porsche 车迷、The Weeknd 歌迷。希望某天可以开着自己的 Dream Car、放着 The Weeknd 的歌、载着她去一个舒适宜人的地方写代码。"
+          content="独立开发者、远程工作者、Porsche 车迷、The Weeknd 歌迷。"
           name="description"
+        />
+        <meta
+          property="og:title"
+          content="Jay - 程序员、远程工作者、Porsche 车迷、The Weeknd 歌迷"
         />
       </Head>
 
