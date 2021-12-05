@@ -158,10 +158,10 @@ export default function Home({ mostRecentPostsData }) {
         <h3 className="mb-6 mt-16 text-2xl md:text-4xl font-bold tracking-tight text-black dark:text-white">
           已赞助
         </h3>
-        <p className="mb-8 text-gray-600 dark:text-gray-400">
+        <p className="mb-12 text-gray-600 dark:text-gray-400">
           一直以来我都认为，优秀的开源软件创作者对行业的贡献是巨大的，其中还包括许多不成规模的独立开发者们，我想做的就是希望给这部分群体一点微小的帮助。
         </p>
-        <div className="flex gap-10 flex-col w-full">
+        <div className="flex gap-12 flex-col w-full">
           <SponsorCard
             href="https://github.com/antfu"
             title="Anthony Fu"

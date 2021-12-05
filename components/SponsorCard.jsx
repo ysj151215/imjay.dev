@@ -9,7 +9,7 @@ export default function SponsorCard({ description, href, src, title }) {
       target="_blank"
     >
       <div className="flex items-start flex-col sm:flex-row w-full">
-        <div className="flex-none w-60px mb-6 sm:(w-80px mr-6 mb-0)">
+        <div className="flex-none w-60px mb-6 sm:(w-80px mr-10 mb-0)">
           <Image
             alt={title}
             src={src}
