@@ -28,6 +28,7 @@ export default function Projects({ use }) {
       <Head>
         <title>物品清单 - Jay</title>
         <meta content={metaDesc} name="description" />
+        <meta property="og:title" content={`${metaTitle} - Jay`} />
       </Head>
       <Container>
         <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">

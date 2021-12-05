@@ -38,6 +38,7 @@ class MyDocument extends Document {
             content="#111111"
             media="(prefers-color-scheme: dark)"
           />
+          <meta property="og:image" content="/images/OGP.png" />
         </Head>
         <body className="text-black dark:text-white font-sans min-w-80">
           <Main />

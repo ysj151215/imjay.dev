@@ -7,11 +7,12 @@ import { allBlogs } from '.contentlayer/data'
 import BlogPostCard from '../components/BlogPostCard'
 import Container from '../components/Container'
 import ProjectPostCard from '../components/ProjectPostCard'
+import SponsorCard from '../components/SponsorCard'
 
-const diffGradients = [
-  'from-[#D8B4FE] to-[#818CF8]',
-  'from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]',
-  'from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]'
+const mostRecentPostsGradients = [
+  'from-[lightpink] to-[lightsalmon]',
+  'from-[lightgreen] to-[lightseagreen]',
+  'from-[lightskyblue] to-[cornflowerblue]'
 ]
 
 export async function getStaticProps() {
@@ -41,8 +42,12 @@ export default function Home({ mostRecentPostsData }) {
       <Head>
         <title>Jay - 程序员、远程工作者、Porsche 车迷、The Weeknd 歌迷</title>
         <meta
-          content="独立开发者、远程工作者、Porsche 车迷、The Weeknd 歌迷。希望某天可以开着自己的 Dream Car、放着 The Weeknd 的歌、载着她去一个舒适宜人的地方写代码。"
+          content="独立开发者、远程工作者、Porsche 车迷、The Weeknd 歌迷。"
           name="description"
+        />
+        <meta
+          property="og:title"
+          content="Jay - 程序员、远程工作者、Porsche 车迷、The Weeknd 歌迷"
         />
       </Head>
 
@@ -93,7 +98,7 @@ export default function Home({ mostRecentPostsData }) {
               title={title}
               slug={slug}
               updatedAt={updatedAt}
-              gradient={diffGradients[idx]}
+              gradient={mostRecentPostsGradients[idx]}
             />
           ))}
         </div>
@@ -150,6 +155,26 @@ export default function Home({ mostRecentPostsData }) {
             </svg>
           </a>
         </Link>
+        <h3 className="mb-6 mt-16 text-2xl md:text-4xl font-bold tracking-tight text-black dark:text-white">
+          已赞助
+        </h3>
+        <p className="mb-8 text-gray-600 dark:text-gray-400">
+          一直以来我都认为，优秀的开源软件创作者对行业的贡献是巨大的，其中还包括许多不成规模的独立开发者们，我想做的就是希望给这部分群体一点微小的帮助。
+        </p>
+        <div className="flex gap-10 flex-col w-full">
+          <SponsorCard
+            href="https://github.com/antfu"
+            title="Anthony Fu"
+            description="Creator of Slidev, VueUse, UnoCSS, Vitesse, Type Challenges and a few others. Core team member of Vue, Nuxt and Vite. Team member of Windi CSS, wenyan-lang 文言 and Intlify."
+            src="/images/sponsor/Anthony.png"
+          />
+          <SponsorCard
+            href="https://github.com/MonitorControl/MonitorControl"
+            title="MonitorControl"
+            description="Controls your external display brightness and volume and shows native OSD. Use menulet sliders or the keyboard, including native Apple keys!"
+            src="/images/sponsor/MonitorControl.png"
+          />
+        </div>
       </div>
     </Container>
   )

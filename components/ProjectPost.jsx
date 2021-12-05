@@ -62,7 +62,6 @@ export default function ProjectPost({
         src={src}
         height={height}
         width={width}
-        priority
       />
       <div className="flex flex-col justify-between mt-5 md:flex-row">
         <h3 className="w-full mb-2 text-lg md:text-xl font-medium text-gray-900 dark:text-gray-100">
