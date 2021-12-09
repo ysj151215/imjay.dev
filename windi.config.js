@@ -55,7 +55,7 @@ export default defineConfig({
               borderLeftColor: customColors.gray[700],
               color: customColors.gray[300]
             },
-            'h2, h3, h4': { color: customColors.gray[100] },
+            'h1, h2, h3, h4': { color: customColors.gray[100] },
             hr: { borderColor: customColors.gray[700] },
             ol: { li: { '&:before': { color: customColors.gray[500] } } },
             ul: {
