@@ -1,8 +1,10 @@
-@windicss;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center min-w-32 px-6 py-3;
+    @apply inline-flex items-center justify-center min-w-[128px] px-6 py-3;
     @apply text-base font-medium text-black bg-gray-200;
     @apply dark:text-white dark:bg-gray-800;
     @apply border border-transparent rounded-md transition;
@@ -22,12 +24,13 @@ html.dark {
   @apply bg-gray-900;
 }
 
-::selection {
+:::selection {
   color: #fefefe;
   background-color: #47a3f3;
 }
 
 #__next {
+  @apply bg-gray-50 dark:bg-gray-900;
   display: flex;
   flex-direction: column;
   min-height: 100vh;

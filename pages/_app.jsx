@@ -1,5 +1,4 @@
 import { ThemeProvider } from 'next-themes'
-import 'windi.css'
 import '../styles/globals.css'
 import '../styles/typography.css'
 
