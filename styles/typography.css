@@ -1,5 +1,5 @@
 .prose a {
-  @apply transition-all;
+  @apply transition-all text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-600;
 }
 
 .prose pre {
@@ -7,11 +7,11 @@
 }
 
 .prose code {
-  @apply font-mono text-gray-800 dark:text-gray-200 px-1 py-0.5 border border-gray-100 dark:border-gray-800 rounded-lg bg-transparent;
+  @apply text-gray-800 dark:text-gray-200 px-1 py-0.5 border-none border border-gray-100 dark:border-gray-800 rounded-lg bg-transparent;
 }
 
 .prose pre code {
-  @apply font-mono text-gray-800 dark:text-gray-200;
+  @apply text-gray-800 dark:text-gray-200;
 }
 
 .prose img {
@@ -92,18 +92,6 @@ pre::-webkit-scrollbar {
 pre {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-}
-
-.prose blockquote,
-.prose ul {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-}
-
-.prose ul {
-  padding-inline-start: 0;
 }
 
 /* Remove Safari input shadow on mobile */

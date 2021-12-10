@@ -15,7 +15,7 @@ export default function BlogPostCard({ gradient, slug, title, updatedAt }) {
     <Link href={`/blog/${slug}`}>
       <a
         className={cn(
-          'p-1 w-full md:w-1/3 bg-gradient-to-r rounded-xl transform transition-all hover:scale-101',
+          'p-1 w-full md:w-1/3 bg-gradient-to-r rounded-xl transform transition-all hover:scale-[101%]',
           gradient
         )}
       >

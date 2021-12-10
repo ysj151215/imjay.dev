@@ -40,7 +40,7 @@ class MyDocument extends Document {
           />
           <meta property="og:image" content="/images/OGP.png" />
         </Head>
-        <body className="text-black dark:text-white font-sans min-w-80">
+        <body className="text-black dark:text-white font-sans min-w-[320px]">
           <Main />
           <NextScript />
         </body>

@@ -67,7 +67,7 @@ export default function Home({ mostRecentPostsData }) {
               的歌、载着她去一个舒适宜人的地方写代码。
             </p>
           </div>
-          <div className="flex-none w-80px sm:w-122px relative mb-8 sm:mb-0 mr-auto select-none">
+          <div className="flex-none w-[80px] sm:w-[122px] relative mb-8 sm:mb-0 mr-auto select-none">
             <animated.div
               {...bind()}
               style={{
