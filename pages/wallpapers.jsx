@@ -20,7 +20,10 @@ export default function Wallpapers() {
             {metaTitle}
           </h1>
           <p className="mb-12 text-gray-600 dark:text-gray-400">{metaDesc}</p>
-          <div className="divide-y divide-gray-200 dark:divide-gray-800">
+          <div
+            data-nosnippet
+            className="divide-y divide-gray-200 dark:divide-gray-800"
+          >
             <ProjectPost
               className="pb-10"
               href="https://hector.me/"
