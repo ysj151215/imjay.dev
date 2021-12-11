@@ -36,7 +36,10 @@ export default function Projects({ use }) {
             {metaTitle}
           </h1>
           <p className="mb-12 text-gray-600 dark:text-gray-400">{metaDesc}</p>
-          <div className="w-full max-w-2xl prose dark:prose-dark">
+          <div
+            data-nosnippet
+            className="w-full max-w-2xl prose dark:prose-dark"
+          >
             <RoundedImage
               alt="物品清单"
               className="rounded-lg"

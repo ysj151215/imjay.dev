@@ -13,7 +13,10 @@ export default function BlogLayout({ blog, children }) {
         <h1 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-black dark:text-white">
           {blog.title}
         </h1>
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between w-full mt-2">
+        <div
+          data-nosnippet
+          className="flex flex-col md:flex-row items-start md:items-center justify-between w-full mt-2"
+        >
           <div className="flex items-center">
             <Image
               className="rounded-full"
@@ -27,7 +30,10 @@ export default function BlogLayout({ blog, children }) {
             </p>
           </div>
         </div>
-        <div className="w-full max-w-none mt-4 prose dark:prose-dark">
+        <div
+          data-nosnippet
+          className="w-full max-w-none mt-4 prose dark:prose-dark"
+        >
           {children}
         </div>
       </article>
