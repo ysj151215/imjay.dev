@@ -44,7 +44,7 @@ export default function Projects({ use }) {
               alt="物品清单"
               className="rounded-lg"
               src={'/images/uses/my-uses.jpeg'}
-              height={1440 / 2}
+              height={1536 / 2}
               width={1920 / 2}
               priority
             />
