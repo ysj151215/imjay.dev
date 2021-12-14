@@ -83,7 +83,7 @@ export default function Home({ mostRecentPostsData }) {
                 alt="我是 Jay"
                 height={122}
                 width={122}
-                src="/images/Memoji.png"
+                src="/images/Hero.png"
               />
             </animated.div>
           </div>
