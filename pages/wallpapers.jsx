@@ -44,6 +44,15 @@ export default function Wallpapers() {
             />
             <ProjectPost
               className="py-10"
+              href="https://giogargiulo.com/wallpapers"
+              height={1080 / 2}
+              width={1920 / 2}
+              src="/images/wallpapers/Gio.jpg"
+              title="Gio Gargiulo"
+              description="意大利的自由职业设计师。曾为 OnePlus、Google 等公司设计过壁纸。除此以外，他还是位非常不错的摄影师和视频制作者，在众多社交媒体上均发表过不错的作品。"
+            />
+            <ProjectPost
+              className="py-10"
               href="https://oliur.com/category/wallpapers/"
               height={1072 / 2}
               width={1800 / 2}
