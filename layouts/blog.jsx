@@ -23,7 +23,7 @@ export default function BlogLayout({ blog, children }) {
               alt="Jay"
               height={24}
               width={24}
-              src="/images/Hero.png"
+              src="/images/Hero.jpeg"
             />
             <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">
               {formatDate(blog.updatedAt)}
