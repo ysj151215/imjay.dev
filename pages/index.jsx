@@ -132,7 +132,7 @@ export default function Home({ mostRecentPostsData }) {
           index="01"
           height={1119 / 2}
           width={1879 / 2}
-          src="/images/projects/b64.imjay.dev__.jpg"
+          src="/images/projects/B64_Encoder.jpg"
           title="Base64 SVG Encoder"
           description="在线 SVG to Base64 转码工具，基于 Vue.js、Vite.js、Tailwind CSS 和 Modern Web APIs 开发，支持多文件同时转码，输出多种格式。"
         />

@@ -29,7 +29,7 @@ export default function Projects() {
               href="https://b64.imjay.dev/"
               height={1119 / 2}
               width={1879 / 2}
-              src="/images/projects/b64.imjay.dev__.jpg"
+              src="/images/projects/B64_Encoder.jpg"
               gitSrc="https://github.com/ysj151215/b64.imjay.dev"
               title="Base64 SVG Encoder"
               description="在线 SVG to Base64 转码工具，基于 Vue.js、Vite.js、Tailwind CSS 和 Modern Web APIs 开发，支持多文件同时转码，输出多种格式。"
@@ -38,7 +38,7 @@ export default function Projects() {
               className="py-10"
               height={1600 / 2}
               width={2560 / 2}
-              src="/images/projects/jike-meow__.jpeg"
+              src="/images/projects/Jike_Meow.jpeg"
               title="即刻喵"
               description="「即刻」App 的第三方 Chrome extension，基于 Socket.IO 和 Element UI 开发，帮助浏览器用户在不打开移动端 App 的前提下查看消息通知。"
             />
