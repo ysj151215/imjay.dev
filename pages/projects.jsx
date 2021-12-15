@@ -26,6 +26,16 @@ export default function Projects() {
           >
             <ProjectPost
               className="pb-10"
+              href="https://www.raycast.com/ysj151215/raycast-surge"
+              height={1200 / 2}
+              width={1600 / 2}
+              src="/images/projects/Surge_Raycast.png"
+              gitSrc="https://github.com/ysj151215/extensions"
+              title="Surge for Raycast"
+              description="Surge 的第三方 Raycast extension，基于 Surge HTTP API 开发，方便用户直接在 Raycast 上控制 Surge 的各种功能。"
+            />
+            <ProjectPost
+              className="py-10"
               href="https://b64.imjay.dev/"
               height={1119 / 2}
               width={1879 / 2}
