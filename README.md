@@ -4,8 +4,8 @@ Hi, I'm Jay. I'm a web developer.
 
 ## Tech Stack
 
-- [Next.js 12](https://nextjs.org/) - Framework.
-- [Tailwind CSS 3](https://tailwindcss.com/) - Atomic CSS framework.
+- [Next.js](https://nextjs.org/) - Framework.
+- [Tailwind CSS](https://tailwindcss.com/) - Atomic CSS framework.
 - [MDX](https://mdxjs.com/) - JSX in markdown.
 - [Vercel](https://vercel.com/) - Deployment.
 
