@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function SponsorCard({ description, href, src, title }) {
   return (
     <a
-      className="flex transform transition-all hover:scale-[101%]"
+      className="flex transform transition-all hover:scale-105"
       href={href}
       rel="noopener noreferrer"
       target="_blank"
