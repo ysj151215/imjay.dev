@@ -128,13 +128,13 @@ export default function Home({ mostRecentPostsData }) {
           从使用别人开发的产品，到自己开发，再到将工具分享给大家，每一个项目都是一段值得探索、回味的经历。即便有些失败了，也要继续努力。
         </p>
         <ProjectPostCard
-          href="https://b64.imjay.dev/"
+          href="https://www.raycast.com/ysj151215/raycast-surge"
           index="01"
-          height={1119 / 2}
-          width={1879 / 2}
-          src="/images/projects/B64_Encoder.jpg"
-          title="Base64 SVG Encoder"
-          description="在线 SVG to Base64 转码工具，基于 Vue.js、Vite.js、Tailwind CSS 和 Modern Web APIs 开发，支持多文件同时转码，输出多种格式。"
+          height={1200 / 2}
+          width={1600 / 2}
+          src="/images/projects/Surge_Raycast.png"
+          title="Surge for Raycast"
+          description="Surge 的第三方 Raycast extension，基于 Surge HTTP API 开发，方便用户直接在 Raycast 上控制 Surge 的各种功能。"
         />
         <Link href="/projects">
           <a className="flex items-center h-6 mt-2 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition">
