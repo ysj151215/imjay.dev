@@ -5,10 +5,20 @@
   "repository": "git@github.com:ysj151215/imjay.dev.git",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run open-browser && next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "open-browser": "open http://localhost:3000"
+  },
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all"
+  ],
+  "engines": {
+    "node": ">=14"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.0",
@@ -32,14 +42,5 @@
     "rehype-slug": "^5.0.0",
     "remark-gfm": "^3.0.1",
     "tailwindcss": "^3.0.6"
-  },
-  "browserslist": [
-    ">0.3%",
-    "not ie 11",
-    "not dead",
-    "not op_mini all"
-  ],
-  "engines": {
-    "node": ">=14"
   }
 }
