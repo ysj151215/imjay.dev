@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useTheme } from 'next-themes'
 import cn from 'classnames'
+import { timeline } from 'motion'
 
 function NavItem({ href, text }) {
   const router = useRouter()
@@ -29,25 +30,73 @@ export default function Header() {
   const [mounted, setMounted] = useState(false)
   const { resolvedTheme, setTheme } = useTheme()
 
-  // After mounting, we have access to the theme
+  // After mounting, we have access to the theme.
   useEffect(() => setMounted(true), [])
 
+  // Current system prefers color scheme.
   const prefersColorScheme = useMedia('(prefers-color-scheme: dark)')
     ? 'dark'
     : 'light'
 
-  const setSystemTheme = () => {
-    if (mounted) {
-      if (prefersColorScheme === 'dark') {
-        resolvedTheme === prefersColorScheme
-          ? setTheme('light')
-          : setTheme('system')
-      } else {
-        resolvedTheme === prefersColorScheme
-          ? setTheme('dark')
-          : setTheme('system')
-      }
+  // Switch theme between light and dark.
+  const setSystemTheme = async () => {
+    if (document.getElementById('theme-switcher')) {
+      return
     }
+
+    // Lock body scrolling while changing theme.
+    document.body.classList.add('lock-on-theme-switching')
+
+    // Create an animated theming element, and append it to the switcher button.
+    const themeButton = document.getElementById('theme-button')
+    const themeSwitcher = document.createElement('div')
+
+    themeSwitcher.id = 'theme-switcher'
+    themeSwitcher.classList.add(
+      'cursor-wait',
+      'height-0',
+      'fixed',
+      'top-0',
+      'right-0',
+      'left-0',
+      resolvedTheme === 'dark' ? 'bg-gray-50' : 'bg-gray-900'
+    )
+
+    await themeButton.appendChild(themeSwitcher)
+
+    // Animation timeline.
+    const startingAnimation = [
+      [
+        '#theme-switcher',
+        { height: '100vh', width: '100vw' },
+        { duration: 0.5 }
+      ]
+    ]
+    const actingAnimation = [
+      ['#theme-switcher', { opacity: 0 }, { duration: 0.5 }]
+    ]
+
+    timeline(startingAnimation).finished.then(() => {
+      if (mounted) {
+        if (prefersColorScheme === 'dark') {
+          resolvedTheme === prefersColorScheme
+            ? setTheme('light')
+            : setTheme('system')
+        } else {
+          resolvedTheme === prefersColorScheme
+            ? setTheme('dark')
+            : setTheme('system')
+        }
+
+        timeline(actingAnimation).finished.then(() => {
+          // After animation ends, remove the animated theming element from the switcher button.
+          themeButton.removeChild(themeSwitcher)
+
+          // Unlock body scrolling while changing theme.
+          document.body.classList.remove('lock-on-theme-switching')
+        })
+      }
+    })
   }
 
   return (
@@ -60,8 +109,9 @@ export default function Header() {
         </div>
         <button
           aria-label="切换主题模式"
+          id="theme-button"
           type="button"
-          className="flex items-center justify-center w-9 h-9 bg-gray-200 dark:bg-gray-600 rounded-lg hover:ring-2 focus:ring-2 ring-gray-300 focus:outline-none appearance-none border-none transition-all"
+          className="flex items-center justify-center relative w-9 h-9 bg-gray-200 dark:bg-gray-600 rounded-lg hover:ring-2 focus:ring-2 ring-gray-300 focus:outline-none appearance-none border-none transition-all z-50"
           onClick={() => setSystemTheme()}
         >
           {mounted && (

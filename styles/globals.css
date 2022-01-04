@@ -24,6 +24,10 @@ html.dark {
   @apply bg-gray-900;
 }
 
+body.lock-on-theme-switching {
+  @apply overflow-y-hidden;
+}
+
 :::selection {
   color: #fefefe;
   background-color: #47a3f3;
@@ -47,14 +51,4 @@ html.dark {
   content: '';
   display: table;
   margin-top: -0.219em;
-}
-
-.avatar-img {
-  cursor: grab;
-  touch-action: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  position: relative;
-  z-index: 99;
 }
