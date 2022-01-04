@@ -24,6 +24,10 @@ html.dark {
   @apply bg-gray-900;
 }
 
+body.lock-on-theme-switching {
+  @apply overflow-y-hidden;
+}
+
 :::selection {
   color: #fefefe;
   background-color: #47a3f3;
