@@ -14,9 +14,7 @@ function NavItem({ href, text }) {
     <Link href={href}>
       <a
         className={cn(
-          isActive
-            ? 'font-semibold text-gray-800 dark:text-gray-200'
-            : 'font-normal text-gray-600 dark:text-gray-400',
+          isActive ? 'font-semibold text-gray-800 dark:text-gray-200' : 'font-normal text-gray-600 dark:text-gray-400',
           'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all'
         )}
       >
@@ -34,9 +32,7 @@ export default function Header() {
   useEffect(() => setMounted(true), [])
 
   // Current system prefers color scheme.
-  const prefersColorScheme = useMedia('(prefers-color-scheme: dark)')
-    ? 'dark'
-    : 'light'
+  const prefersColorScheme = useMedia('(prefers-color-scheme: dark)') ? 'dark' : 'light'
 
   // Switch theme between light and dark.
   const setSystemTheme = async () => {
@@ -65,27 +61,15 @@ export default function Header() {
     await themeButton.appendChild(themeSwitcher)
 
     // Animation timeline.
-    const startingAnimation = [
-      [
-        '#theme-switcher',
-        { height: '100vh', width: '100vw' },
-        { duration: 0.5 }
-      ]
-    ]
-    const actingAnimation = [
-      ['#theme-switcher', { opacity: 0 }, { duration: 0.5 }]
-    ]
+    const startingAnimation = [['#theme-switcher', { height: '100vh', width: '100vw' }, { duration: 0.5 }]]
+    const actingAnimation = [['#theme-switcher', { opacity: 0 }, { duration: 0.5 }]]
 
     timeline(startingAnimation).finished.then(() => {
       if (mounted) {
         if (prefersColorScheme === 'dark') {
-          resolvedTheme === prefersColorScheme
-            ? setTheme('light')
-            : setTheme('system')
+          resolvedTheme === prefersColorScheme ? setTheme('light') : setTheme('system')
         } else {
-          resolvedTheme === prefersColorScheme
-            ? setTheme('dark')
-            : setTheme('system')
+          resolvedTheme === prefersColorScheme ? setTheme('dark') : setTheme('system')
         }
 
         timeline(actingAnimation).finished.then(() => {

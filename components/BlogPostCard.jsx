@@ -39,9 +39,7 @@ export default function BlogPostCard({ gradient, slug, title, updatedAt }) {
                 fill="currentColor"
               />
             </svg>
-            <span className="ml-2 align-baseline capsize">
-              {formatDate(updatedAt)}
-            </span>
+            <span className="ml-2 align-baseline capsize">{formatDate(updatedAt)}</span>
           </div>
         </div>
       </a>

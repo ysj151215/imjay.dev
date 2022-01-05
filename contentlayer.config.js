@@ -1,13 +1,13 @@
 import { defineDocumentType, makeSource } from 'contentlayer/source-files'
-import remarkGfm from 'remark-gfm'
 import rehypePrism from 'rehype-prism-plus'
 import rehypeSlug from 'rehype-slug'
+import remarkGfm from 'remark-gfm'
 
 const computedFields = {
   slug: {
     type: 'string',
-    resolve: doc => doc._raw.sourceFileName.replace(/\.mdx$/, '')
-  }
+    resolve: doc => doc._raw.sourceFileName.replace(/\.mdx$/, ''),
+  },
 }
 
 const Blogs = defineDocumentType(() => ({
@@ -17,9 +17,9 @@ const Blogs = defineDocumentType(() => ({
   fields: {
     title: { type: 'string', required: true },
     description: { type: 'string', required: true },
-    updatedAt: { type: 'string', required: true }
+    updatedAt: { type: 'string', required: true },
   },
-  computedFields
+  computedFields,
 }))
 
 const Uses = defineDocumentType(() => ({
@@ -29,9 +29,9 @@ const Uses = defineDocumentType(() => ({
   fields: {
     title: { type: 'string', required: true },
     description: { type: 'string', required: true },
-    updatedAt: { type: 'string', required: true }
+    updatedAt: { type: 'string', required: true },
   },
-  computedFields
+  computedFields,
 }))
 
 const contentLayerConfig = makeSource({
@@ -39,8 +39,8 @@ const contentLayerConfig = makeSource({
   documentTypes: [Blogs, Uses],
   mdx: {
     remarkPlugins: [remarkGfm],
-    rehypePlugins: [rehypeSlug, rehypePrism]
-  }
+    rehypePlugins: [rehypeSlug, rehypePrism],
+  },
 })
 
 export default contentLayerConfig

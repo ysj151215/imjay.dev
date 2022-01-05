@@ -7,15 +7,14 @@ import Container from '../components/Container'
 export async function getStaticProps() {
   return {
     props: {
-      use: allUses[0]
-    }
+      use: allUses[0],
+    },
   }
 }
 
 export default function Projects({ use }) {
   const metaTitle = '我在用什么'
-  const metaDesc =
-    '良好的环境、称手的工具是提高工作效率和生活品质必不可少的条件。'
+  const metaDesc = '良好的环境、称手的工具是提高工作效率和生活品质必不可少的条件。'
 
   const Component = useMDXComponent(use.body.code)
 
@@ -32,14 +31,9 @@ export default function Projects({ use }) {
       </Head>
       <Container>
         <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
-          <h1 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-black dark:text-white">
-            {metaTitle}
-          </h1>
+          <h1 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-black dark:text-white">{metaTitle}</h1>
           <p className="mb-12 text-gray-600 dark:text-gray-400">{metaDesc}</p>
-          <div
-            data-nosnippet
-            className="w-full max-w-2xl prose dark:prose-dark"
-          >
+          <div data-nosnippet className="w-full max-w-2xl prose dark:prose-dark">
             <RoundedImage
               alt="物品清单"
               className="rounded-lg"

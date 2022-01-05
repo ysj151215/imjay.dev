@@ -13,10 +13,7 @@ const ExternalLink = ({ children, href }) => (
 
 export default function Footer() {
   return (
-    <footer
-      data-nosnippet
-      className="flex flex-col justify-center items-start w-full max-w-2xl mx-auto mb-8"
-    >
+    <footer data-nosnippet className="flex flex-col justify-center items-start w-full max-w-2xl mx-auto mb-8">
       <hr className="w-full mb-8 border border-gray-200 dark:border-gray-800" />
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-2xl pb-16">
         <div className="flex flex-col space-y-4">
@@ -49,18 +46,10 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-col space-y-4">
-          <ExternalLink href="https://github.com/ysj151215">
-            GitHub
-          </ExternalLink>
-          <ExternalLink href="https://gist.github.com/ysj151215">
-            GitHub Gist
-          </ExternalLink>
-          <ExternalLink href="https://twitter.com/ysj151215">
-            Twitter
-          </ExternalLink>
-          <ExternalLink href="https://unsplash.com/@ysj151215">
-            Unsplash
-          </ExternalLink>
+          <ExternalLink href="https://github.com/ysj151215">GitHub</ExternalLink>
+          <ExternalLink href="https://gist.github.com/ysj151215">GitHub Gist</ExternalLink>
+          <ExternalLink href="https://twitter.com/ysj151215">Twitter</ExternalLink>
+          <ExternalLink href="https://unsplash.com/@ysj151215">Unsplash</ExternalLink>
         </div>
       </div>
     </footer>

@@ -7,9 +7,9 @@ import BlogLayout from '../../layouts/blog'
 export async function getStaticPaths() {
   return {
     paths: allBlogs.map(p => ({
-      params: { slug: p.slug }
+      params: { slug: p.slug },
     })),
-    fallback: false
+    fallback: false,
   }
 }
 
@@ -18,8 +18,8 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
-      blog
-    }
+      blog,
+    },
   }
 }
 
