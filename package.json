@@ -5,7 +5,7 @@
   "repository": "git@github.com:ysj151215/imjay.dev.git",
   "license": "MIT",
   "scripts": {
-    "dev": "npm run open-browser && next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
