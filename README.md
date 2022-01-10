@@ -17,4 +17,4 @@ Also, feel free to fork this code to build your own portfolio.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
