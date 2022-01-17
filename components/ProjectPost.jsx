@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function ProjectPost({ className, description, height, href, gitSrc, src, title, width }) {
+export default function ProjectPost({ className, description, gitSrc, height, href, src, title, width }) {
   const CustomBtnTag = () => {
     if (href) {
       return (

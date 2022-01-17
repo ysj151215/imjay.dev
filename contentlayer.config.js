@@ -38,8 +38,8 @@ const contentLayerConfig = makeSource({
   contentDirPath: 'posts',
   documentTypes: [Blogs, Uses],
   mdx: {
-    remarkPlugins: [remarkGfm],
     rehypePlugins: [rehypeSlug, rehypePrism],
+    remarkPlugins: [remarkGfm],
   },
 })
 
