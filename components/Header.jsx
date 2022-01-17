@@ -32,7 +32,7 @@ export default function Header() {
   useEffect(() => setMounted(true), [])
 
   // Current system prefers color scheme.
-  const prefersColorScheme = useMedia('(prefers-color-scheme: dark)') ? 'dark' : 'light'
+  const prefersColorScheme = useMedia('(prefers-color-scheme: dark)', false) ? 'dark' : 'light'
 
   // Switch theme between light and dark.
   const setSystemTheme = async () => {
