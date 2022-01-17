@@ -3,7 +3,7 @@
   "version": "1.1.2",
   "description": "My portfolio built with Next.js, Tailwind CSS, MDX and Vercel.",
   "repository": "git@github.com:ysj151215/imjay.dev.git",
-  "license": "GNU GPLv3",
+  "license": "GPL-3.0+",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
