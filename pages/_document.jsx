@@ -17,7 +17,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)" />
           <meta property="og:image" content="/images/OGP.png" />
         </Head>
-        <body className="text-black dark:text-white font-sans min-w-[320px]">
+        <body className="min-w-[320px] font-sans text-black dark:text-white">
           <Main />
           <NextScript />
         </body>

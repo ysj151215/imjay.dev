@@ -15,17 +15,17 @@ export default function BlogPostCard({ gradient, slug, title, updatedAt }) {
     <Link href={`/blog/${slug}`}>
       <a
         className={cn(
-          'p-1 w-full md:w-1/3 bg-gradient-to-r rounded-xl transform transition-all hover:scale-105',
+          'w-full transform rounded-xl bg-gradient-to-r p-1 transition-all hover:scale-105 md:w-1/3',
           gradient
         )}
       >
-        <div className="flex flex-col justify-between h-full p-4 bg-white dark:bg-black rounded-lg">
-          <div className="flex flex-col md:flex-row justify-between">
-            <h4 className="text-lg md:text-lg font-medium mb-6 sm:mb-10 w-full text-gray-900 dark:text-gray-100 tracking-tight">
+        <div className="flex h-full flex-col justify-between rounded-lg bg-white p-4 dark:bg-black">
+          <div className="flex flex-col justify-between md:flex-row">
+            <h4 className="mb-6 w-full text-lg font-medium tracking-tight text-gray-900 dark:text-gray-100 sm:mb-10 md:text-lg">
               {title}
             </h4>
           </div>
-          <div className="flex items-center text-gray-800 dark:text-gray-200 capsize">
+          <div className="capsize flex items-center text-gray-800 dark:text-gray-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
@@ -39,7 +39,7 @@ export default function BlogPostCard({ gradient, slug, title, updatedAt }) {
                 fill="currentColor"
               />
             </svg>
-            <span className="ml-2 align-baseline capsize">{formatDate(updatedAt)}</span>
+            <span className="capsize ml-2 align-baseline">{formatDate(updatedAt)}</span>
           </div>
         </div>
       </a>

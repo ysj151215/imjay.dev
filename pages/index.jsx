@@ -36,10 +36,10 @@ export default function Home({ mostRecentPostsData }) {
         <meta property="og:title" content="Jay - 程序员、远程工作者、Porsche 车迷、The Weeknd 歌迷" />
       </Head>
 
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto pb-16 border-gray-700">
-        <div className="flex flex-col-reverse sm:flex-row items-start">
+      <div className="mx-auto flex max-w-2xl flex-col items-start justify-center border-gray-700 pb-16">
+        <div className="flex flex-col-reverse items-start sm:flex-row">
           <div className="flex flex-col sm:pr-8">
-            <h1 className="mb-1 text-3xl md:text-5xl font-bold tracking-tight text-black dark:text-white">Jay</h1>
+            <h1 className="mb-1 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">Jay</h1>
             <h2 className="mb-4 text-gray-700 dark:text-gray-200">
               前端工程师，目前在 <span className="font-semibold">DevHub</span> 任职。
             </h2>
@@ -48,12 +48,12 @@ export default function Home({ mostRecentPostsData }) {
               的歌、载着她去一个舒适宜人的地方写代码。
             </p>
           </div>
-          <div className="flex-none w-[80px] sm:w-[122px] relative mb-8 sm:mb-0 mr-auto select-none">
+          <div className="relative mb-8 mr-auto w-[80px] flex-none select-none sm:mb-0 sm:w-[122px]">
             <Image className="relative rounded-full" alt="我是 Jay" height={122} width={122} src="/images/Hero.jpeg" />
           </div>
         </div>
-        <h3 className="mb-6 text-2xl md:text-4xl font-bold tracking-tight text-black dark:text-white">最近发布</h3>
-        <div className="flex gap-6 flex-col md:flex-row w-full">
+        <h3 className="mb-6 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">最近发布</h3>
+        <div className="flex w-full flex-col gap-6 md:flex-row">
           {mostRecentPostsData.map(({ slug, title, updatedAt }, idx) => (
             <BlogPostCard
               key={slug}
@@ -65,9 +65,9 @@ export default function Home({ mostRecentPostsData }) {
           ))}
         </div>
         <Link href="/blog">
-          <a className="flex items-center h-6 mt-8 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition">
+          <a className="mt-8 flex h-6 items-center text-gray-500 transition hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
             查看所有
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="h-6 w-6 ml-1">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="ml-1 h-6 w-6">
               <path
                 stroke="currentColor"
                 strokeLinecap="round"
@@ -78,7 +78,7 @@ export default function Home({ mostRecentPostsData }) {
             </svg>
           </a>
         </Link>
-        <h3 className="mb-6 mt-16 text-2xl md:text-4xl font-bold tracking-tight text-black dark:text-white">
+        <h3 className="mb-6 mt-16 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
           个人作品
         </h3>
         <p className="mb-8 text-gray-600 dark:text-gray-400">
@@ -94,9 +94,9 @@ export default function Home({ mostRecentPostsData }) {
           description="Surge 的第三方 Raycast extension，基于 Surge HTTP API 开发，方便用户直接在 Raycast 上控制 Surge 的各种功能。"
         />
         <Link href="/projects">
-          <a className="flex items-center h-6 mt-2 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition">
+          <a className="mt-2 flex h-6 items-center text-gray-500 transition hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
             所有作品
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="h-6 w-6 ml-1">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="ml-1 h-6 w-6">
               <path
                 stroke="currentColor"
                 strokeLinecap="round"
@@ -107,11 +107,11 @@ export default function Home({ mostRecentPostsData }) {
             </svg>
           </a>
         </Link>
-        <h3 className="mb-6 mt-16 text-2xl md:text-4xl font-bold tracking-tight text-black dark:text-white">已赞助</h3>
+        <h3 className="mb-6 mt-16 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">已赞助</h3>
         <p className="mb-12 text-gray-600 dark:text-gray-400">
           一直以来我都认为，优秀的开源软件创作者对行业的贡献是巨大的，其中还包括许多不成规模的独立开发者们，我想做的就是希望给这部分群体一点微小的帮助。
         </p>
-        <div className="flex gap-12 flex-col w-full">
+        <div className="flex w-full flex-col gap-12">
           <SponsorCard
             href="https://github.com/antfu"
             title="Anthony Fu"

@@ -15,8 +15,8 @@ export default function Wallpapers() {
         <meta property="og:title" content={`${metaTitle} - Jay`} />
       </Head>
       <Container>
-        <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
-          <h1 className="mb-4 text-3xl md:text-5xl font-bold tracking-tight text-black dark:text-white">{metaTitle}</h1>
+        <div className="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center">
+          <h1 className="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">{metaTitle}</h1>
           <p className="mb-12 text-gray-600 dark:text-gray-400">{metaDesc}</p>
           <div data-nosnippet className="divide-y divide-gray-200 dark:divide-gray-800">
             <ProjectPost

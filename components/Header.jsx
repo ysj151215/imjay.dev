@@ -15,7 +15,7 @@ function NavItem({ href, text }) {
       <a
         className={cn(
           isActive ? 'font-semibold text-gray-800 dark:text-gray-200' : 'font-normal text-gray-600 dark:text-gray-400',
-          'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all'
+          'hidden rounded-lg p-1 transition-all hover:bg-gray-200 dark:hover:bg-gray-800 sm:px-3 sm:py-2 md:inline-block'
         )}
       >
         <span className="capsize">{text}</span>
@@ -85,7 +85,7 @@ export default function Header() {
 
   return (
     <div className="flex flex-col justify-center px-8">
-      <nav className="flex items-center justify-between relative w-full max-w-2xl mx-auto pt-8 pb-8 sm:pb-16 border-gray-200 dark:border-gray-700  text-gray-900 dark:text-gray-100">
+      <nav className="relative mx-auto flex w-full max-w-2xl items-center justify-between border-gray-200 pt-8 pb-8 text-gray-900 dark:border-gray-700  dark:text-gray-100 sm:pb-16">
         <div className="-ml-0.60rem">
           <NavItem href="/" text="概览" />
           <NavItem href="/blog" text="博客" />
@@ -95,7 +95,7 @@ export default function Header() {
           aria-label="切换主题模式"
           id="theme-button"
           type="button"
-          className="flex items-center justify-center relative w-9 h-9 bg-gray-200 dark:bg-gray-600 rounded-lg hover:ring-2 focus:ring-2 ring-gray-300 focus:outline-none appearance-none border-none transition-all z-50"
+          className="relative z-50 flex h-9 w-9 appearance-none items-center justify-center rounded-lg border-none bg-gray-200 ring-gray-300 transition-all hover:ring-2 focus:outline-none focus:ring-2 dark:bg-gray-600"
           onClick={() => setSystemTheme()}
         >
           {mounted && (
@@ -104,7 +104,7 @@ export default function Header() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              className="w-5 h-5 text-gray-800 dark:text-gray-200"
+              className="h-5 w-5 text-gray-800 dark:text-gray-200"
             >
               {resolvedTheme === 'dark' ? (
                 <path
