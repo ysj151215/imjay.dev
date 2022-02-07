@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "My portfolio built with Next.js, Tailwind CSS, MDX and Vercel.",
   "repository": "git@github.com:ysj151215/imjay.dev.git",
   "license": "GPL-3.0+",
@@ -8,7 +8,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:prettier": "npx prettier --write '**/*.{css,js,jsx,mdx}'"
   },
   "browserslist": [
     ">0.3%",
