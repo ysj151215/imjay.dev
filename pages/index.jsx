@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { allBlogs } from '.contentlayer/data'
+import { allBlogs } from '../.contentlayer/generated'
 import BlogPostCard from '../components/BlogPostCard'
 import Container from '../components/Container'
 import ProjectPostCard from '../components/ProjectPostCard'

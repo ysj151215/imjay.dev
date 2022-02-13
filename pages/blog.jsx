@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { allBlogs } from '.contentlayer/data'
+import { allBlogs } from '../.contentlayer/generated'
 import BlogPost from '../components/BlogPost'
 import Container from '../components/Container'
 

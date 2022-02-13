@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useMDXComponent } from 'next-contentlayer/hooks'
-import { allUses } from '.contentlayer/data'
+import { allUses } from '../.contentlayer/generated'
 import Container from '../components/Container'
 
 export async function getStaticProps() {

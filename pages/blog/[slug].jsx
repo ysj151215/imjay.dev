@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useMDXComponent } from 'next-contentlayer/hooks'
-import { allBlogs } from '.contentlayer/data'
+import { allBlogs } from '../../.contentlayer/generated'
 import BlogLayout from '../../layouts/blog'
 
 export async function getStaticPaths() {
