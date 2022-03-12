@@ -25,7 +25,6 @@ export default function Projects() {
               height={1200 / 2}
               width={1600 / 2}
               src="/images/projects/Surge_Raycast.png"
-              gitSrc="https://github.com/ysj151215/extensions"
               title="Surge for Raycast"
               description="Surge 的第三方 Raycast extension，基于 Surge HTTP API 开发，方便用户直接在 Raycast 上控制 Surge 的各种功能。"
             />
@@ -35,7 +34,6 @@ export default function Projects() {
               height={1119 / 2}
               width={1879 / 2}
               src="/images/projects/B64_Encoder.jpg"
-              gitSrc="https://github.com/ysj151215/b64.imjay.dev"
               title="Base64 SVG Encoder"
               description="在线 SVG to Base64 转码工具，基于 Vue.js、Vite.js、Tailwind CSS 和 Modern Web APIs 开发，支持多文件同时转码，输出多种格式。"
             />
