@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "description": "My portfolio built with Next.js, Tailwind CSS, MDX and Vercel.",
   "repository": "git@github.com:ysj151215/imjay.dev.git",
   "license": "GPL-3.0+",
@@ -24,8 +24,8 @@
     "@tailwindcss/typography": "^0.5.2",
     "classnames": "^2.3.1",
     "contentlayer": "^0.1.2",
-    "dayjs": "^1.10.8",
-    "motion": "^10.6.2",
+    "dayjs": "^1.11.0",
+    "motion": "^10.7.0",
     "next": "12.1.0",
     "next-contentlayer": "^0.1.2",
     "next-themes": "^0.1.1",
@@ -34,10 +34,10 @@
     "react-use": "^17.3.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
+    "autoprefixer": "^10.4.4",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
-    "prettier": "^2.5.1",
+    "prettier": "^2.6.1",
     "prettier-plugin-tailwindcss": "^0.1.8",
     "rehype": "^12.0.1",
     "rehype-prism-plus": "^1.3.2",
