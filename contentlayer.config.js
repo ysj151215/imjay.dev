@@ -34,7 +34,7 @@ const Uses = defineDocumentType(() => ({
   computedFields,
 }))
 
-const contentLayerConfig = makeSource({
+export default makeSource({
   contentDirPath: 'posts',
   documentTypes: [Blogs, Uses],
   mdx: {
@@ -42,5 +42,3 @@ const contentLayerConfig = makeSource({
     remarkPlugins: [remarkGfm],
   },
 })
-
-export default contentLayerConfig
